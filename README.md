@@ -35,8 +35,9 @@ ZeTime hybrid smartwatches.
 ## Install
 
 Not on the App Store — see [docs/INSTALL.md](docs/INSTALL.md):
-SideStore (IPA from GitHub Releases, *coming soon*), AltStore, or
-build from source with your own signing identity.
+unsigned IPA from [GitHub Releases](https://github.com/hquezser/openaguja/releases)
+(SideStore or AltStore signs it locally), or build from source with
+your own signing identity.
 
 ## Customize
 

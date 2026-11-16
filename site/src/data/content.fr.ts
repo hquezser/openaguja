@@ -20,7 +20,7 @@ export const fr: LocaleContent = {
       { label: 'Routage webhook et télémétrie', done: true },
       { label: 'Cadrans personnalisés et mise à jour DFU', done: true },
       { label: 'Outils d’images firmware (openaguja-lab)', done: true },
-      { label: 'IPA pré-signée dans les Releases', done: false, note: 'en cours' },
+      { label: 'IPA v1.0.0 dans les Releases', done: true },
     ],
     tryTitle: '## Essayer',
     tryText: 'Le dépôt est public. Pour l’app iOS, pas d’App Store : SideStore, AltStore ou build Xcode — tout est dans le guide d’installation.',
@@ -77,7 +77,7 @@ export const fr: LocaleContent = {
       ]},
     ]},
     install: { sections: [
-      { kind: 'intro', label: 'PREMIERS PAS', title: 'Installation', text: 'Trois chemins : l’IPA toute faite (bientôt), un sideload via SideStore/AltStore, ou le build Xcode depuis les sources.' },
+      { kind: 'intro', label: 'PREMIERS PAS', title: 'Installation', text: 'Trois chemins : l’IPA toute faite dans les Releases, un sideload via SideStore/AltStore, ou le build Xcode depuis les sources.' },
       { kind: 'columns', toc: [
         { href: '#prerequis', label: '01 · Prérequis' }, { href: '#sideStore', label: '02 · SideStore / AltStore' },
         { href: '#sources', label: '03 · Build Xcode' }, { href: '#cli', label: '04 · CLI Rust' },
@@ -86,7 +86,7 @@ export const fr: LocaleContent = {
         { type: 'h2', id: 'prerequis', text: '01. Les prérequis' },
         { type: 'p', text: 'Un iPhone sous iOS 16 ou plus, une montre ZeTime chargée et le Bluetooth activé. Pour compiler vous-même : macOS, Xcode et un Apple ID (gratuit suffit pour signer sur votre appareil). Le guide complet est dans [docs/INSTALL.md](https://github.com/hquezser/openaguja/blob/main/docs/INSTALL.md) du dépôt.' },
         { type: 'h2', id: 'sideStore', text: '02. SideStore ou AltStore' },
-        { type: 'p', text: 'L’IPA pré-signée arrive dans les Releases du dépôt. En attendant, vous pouvez construire l’IPA vous-même puis l’installer via SideStore (recommandé, renouvellement automatique) ou AltStore. Une fois installée, l’app se met à jour comme n’importe quelle app sideloadée.' },
+        { type: 'p', text: 'L’IPA v1.0.0 est disponible dans les [Releases](https://github.com/hquezser/openaguja/releases) du dépôt — non signée : SideStore (recommandé, renouvellement automatique) ou AltStore la signent localement avec votre certificat. Vous pouvez aussi construire l’IPA vous-même. Une fois installée, l’app se met à jour comme n’importe quelle app sideloadée.' },
         { type: 'h2', id: 'sources', text: '03. Compiler depuis les sources' },
         { type: 'p', text: 'Clonez le dépôt, générez le projet Xcode avec xcodegen, renseignez votre Team ID dans `ios/Config/Local.xcconfig` (modèle fourni), puis build et run vers votre iPhone. Le bundle id par défaut est générique : changez-le si vous cohabitez avec une autre signature.' },
         { type: 'code', label: 'SHELL', code: 'git clone https://github.com/hquezser/openaguja.git\ncd openaguja\ncd ios && xcodegen generate\n# ouvrir OpenAguja.xcodeproj dans Xcode, choisir votre équipe' },

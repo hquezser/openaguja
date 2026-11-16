@@ -20,7 +20,7 @@ export const en: LocaleContent = {
       { label: 'Webhook routing and telemetry', done: true },
       { label: 'Custom watchfaces and DFU updates', done: true },
       { label: 'Firmware image tools (openaguja-lab)', done: true },
-      { label: 'Pre-signed IPA in Releases', done: false, note: 'in progress' },
+      { label: 'IPA v1.0.0 in Releases', done: true },
     ],
     tryTitle: '## Try it',
     tryText: 'The repo is public. For the iOS app there’s no App Store: SideStore, AltStore or an Xcode build — everything is in the install guide.',
@@ -77,7 +77,7 @@ export const en: LocaleContent = {
       ]},
     ]},
     install: { sections: [
-      { kind: 'intro', label: 'GETTING STARTED', title: 'Installation', text: 'Three paths: the ready IPA (coming soon), a SideStore/AltStore sideload, or an Xcode build from source.' },
+      { kind: 'intro', label: 'GETTING STARTED', title: 'Installation', text: 'Three paths: the ready IPA in Releases, a SideStore/AltStore sideload, or an Xcode build from source.' },
       { kind: 'columns', toc: [
         { href: '#prereqs', label: '01 · Requirements' }, { href: '#sidestore', label: '02 · SideStore / AltStore' },
         { href: '#sources', label: '03 · Xcode build' }, { href: '#cli', label: '04 · Rust CLI' },
@@ -86,7 +86,7 @@ export const en: LocaleContent = {
         { type: 'h2', id: 'prereqs', text: '01. Requirements' },
         { type: 'p', text: 'An iPhone on iOS 16+, a charged ZeTime watch and Bluetooth on. To build it yourself: macOS, Xcode and an Apple ID (a free one is enough to sign on your own device). The full guide lives in the repo’s [docs/INSTALL.md](https://github.com/hquezser/openaguja/blob/main/docs/INSTALL.md).' },
         { type: 'h2', id: 'sidestore', text: '02. SideStore or AltStore' },
-        { type: 'p', text: 'The pre-signed IPA is coming to the repo’s Releases. Meanwhile you can build the IPA yourself and install it via SideStore (recommended, automatic refresh) or AltStore. Once installed, the app updates like any sideloaded app.' },
+        { type: 'p', text: 'The v1.0.0 IPA is available in the repo’s [Releases](https://github.com/hquezser/openaguja/releases) — unsigned: SideStore (recommended, automatic refresh) or AltStore signs it locally with your certificate. You can also build the IPA yourself. Once installed, the app updates like any sideloaded app.' },
         { type: 'h2', id: 'sources', text: '03. Build from source' },
         { type: 'p', text: 'Clone the repo, generate the Xcode project with xcodegen, fill in your Team ID in `ios/Config/Local.xcconfig` (template provided), then build and run to your iPhone. The default bundle id is generic: change it if you share the device with another signature.' },
         { type: 'code', label: 'SHELL', code: 'git clone https://github.com/hquezser/openaguja.git\ncd openaguja\ncd ios && xcodegen generate\n# open OpenAguja.xcodeproj in Xcode, pick your team' },

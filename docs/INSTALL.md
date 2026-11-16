@@ -2,16 +2,16 @@
 
 OpenAguja is not on the App Store. Three routes, easiest first.
 
-## 1. SideStore (recommended once releases exist)
+## 1. SideStore (recommended)
 
 SideStore installs IPAs signed with your own certificate and
 **auto-refreshes the 7-day signature on-device** — no computer needed
 after the initial setup.
 
-- Download the IPA from **GitHub Releases** — *published by CI, coming
-  soon*.
-- Install SideStore (side-store.io), then add the IPA as a source or
-  install the file directly.
+- Download `OpenAguja.ipa` from
+  [GitHub Releases](https://github.com/hquezser/openaguja/releases).
+- Install SideStore (side-store.io), then open the IPA — SideStore
+  signs it with your certificate and installs it.
 
 ## 2. AltStore + AltServer
 
