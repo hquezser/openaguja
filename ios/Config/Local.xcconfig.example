@@ -1,0 +1,9 @@
+// Exemple de configuration locale — copier en Local.xcconfig (même
+// dossier) puis adapter. Local.xcconfig est ignoré par git.
+//
+// Un Apple ID gratuit suffit pour signer sur ton propre iPhone
+// (Xcode → Settings → Accounts). Le bundle id doit être unique :
+// pris par quelqu'un d'autre, l'installation sur ton appareil échoue.
+//
+// DEVELOPMENT_TEAM = ABCDE12345
+// PRODUCT_BUNDLE_IDENTIFIER = com.example.monnom.app

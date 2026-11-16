@@ -1,0 +1,13 @@
+/target
+/ios/OpenAgujaCore/
+# projet Xcode généré par xcodegen (embarque l'identifiant d'équipe)
+/ios/OpenAguja.xcodeproj/
+# surcharge locale de signature (voir ios/Config/Local.xcconfig.example)
+/ios/Config/Local.xcconfig
+/AGENTS.local.md
+*.local.*
+.DS_Store
+/recovery/
+
+# Xcode per-user workspace state
+**/xcuserdata/

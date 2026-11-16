@@ -1,0 +1,41 @@
+# openaguja-macd — configuration du micro-daemon de commandes.
+# Copier vers ~/.config/openaguja-macd/config.toml
+#
+# Chaque clé de [commands] = nom de commande = segment d'URL :
+#   POST /cmd/<nom>   (Authorization: Bearer <token>)
+# Les noms correspondent aux ids d'actions de la montre envoyés par
+# OpenAguja : play, pause, previous, next, volume_up, volume_down,
+# find_phone, camera, call_rejected, sos, quick_reply.
+#
+# Formes acceptées :
+#   play = "osascript -e 'tell application \"Music\" to play'"
+#   ou table :  play = { run = "...", timeout_secs = 5 }
+
+# Écoute sur toutes les interfaces pour être joignable depuis l'iPhone.
+bind = "0.0.0.0:9876"
+
+# Jeton Bearer exigé sur /cmd — surchargeable par OPENAGUJA_DAEMON_TOKEN.
+token = "change-me-avec-un-vrai-secret"
+
+# Délai max d'exécution par défaut (secondes).
+timeout_secs = 10
+
+[commands]
+# --- Verrouillage / session macOS ---
+# Astuce : la montre n'a pas d'action « lock » — associe cette commande à
+# l'id d'une action dans la config, ex. : sos = '...CGSession -suspend'
+lock = '/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+# --- Apple Music / Music.app ---
+play = "osascript -e 'tell application \"Music\" to play'"
+pause = "osascript -e 'tell application \"Music\" to pause'"
+next = "osascript -e 'tell application \"Music\" to next track'"
+previous = "osascript -e 'tell application \"Music\" to previous track'"
+
+# --- Volume système (±5 %) ---
+volume_up = "osascript -e 'set volume output volume (min 100 ((output volume of (get volume settings)) + 5))'"
+volume_down = "osascript -e 'set volume output volume (max 0 ((output volume of (get volume settings)) - 5))'"
+
+# --- Exemples d'actions alertes de la montre ---
+# sos = "osascript -e 'display notification \"SOS depuis la montre\" with title \"ZeTime\"'"
+# find_phone = "afplay /System/Library/Sounds/Glass.aiff"

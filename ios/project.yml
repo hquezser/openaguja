@@ -1,0 +1,51 @@
+name: OpenAguja
+options:
+  developmentLanguage: en
+packages:
+  OpenAgujaCore:
+    path: OpenAgujaCore
+targets:
+  OpenAguja:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - OpenAguja
+      # Profil d'exemple embarqué (source unique : contrib/profiles/example.json).
+      - path: ../contrib/profiles/example.json
+        buildPhase: resources
+    dependencies:
+      - package: OpenAgujaCore
+    info:
+      path: OpenAguja/Info.plist
+      properties:
+        CFBundleDisplayName: OpenAguja
+        NSBluetoothAlwaysUsageDescription: "The app connects to your ZeTime watch to relay its actions, including in the background."
+        NSLocationWhenInUseUsageDescription: "Your location is used for local weather and to find your car."
+        NSLocationAlwaysAndWhenInUseUsageDescription: "To remember and find your car from the watch, with the iPhone in your pocket."
+        NSCalendarsUsageDescription: "Upcoming calendar events can be sent to the watch."
+        NSCalendarsFullAccessUsageDescription: "Upcoming calendar events can be sent to the watch."
+        NSAppleMusicUsageDescription: "The watch music buttons can control Apple Music and show the current title."
+        NSCameraUsageDescription: "The watch camera button takes photos from the app's Camera screen."
+        NSPhotoLibraryAddUsageDescription: "Photos triggered from the watch are saved to your photo library."
+        NSLocalNetworkUsageDescription: "Watch actions can be relayed to your Mac's HTTP daemon on the local network."
+        UIBackgroundModes:
+          - bluetooth-central
+          - audio
+        LSApplicationQueriesSchemes:
+          - music
+          - spotify
+          - deezer
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    configFiles:
+      Debug: Config/Base.xcconfig
+      Release: Config/Base.xcconfig
+    settings:
+      base:
+        SWIFT_VERSION: "5.0"
+        SWIFT_EMIT_LOC_STRINGS: YES
+        LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic

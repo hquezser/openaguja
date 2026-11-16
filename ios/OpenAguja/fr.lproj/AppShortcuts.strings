@@ -1,0 +1,15 @@
+/* No comment provided by engineer. */
+"Activate ${mode} mode with ${applicationName}" = "Activer le mode ${mode} avec ${applicationName}";
+
+/* No comment provided by engineer. */
+"My watch battery with ${applicationName}" = "Batterie de ma montre avec ${applicationName}";
+
+/* No comment provided by engineer. */
+"Ring my watch with ${applicationName}" = "Faire vibrer ma montre avec ${applicationName}";
+
+/* No comment provided by engineer. */
+"Send weather to my watch with ${applicationName}" = "Envoyer la météo à ma montre avec ${applicationName}";
+
+/* No comment provided by engineer. */
+"Switch to ${mode} mode with ${applicationName}" = "Passer en mode ${mode} avec ${applicationName}";
+

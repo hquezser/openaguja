@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>OpenAguja</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>music</string>
+		<string>spotify</string>
+		<string>deezer</string>
+	</array>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>The watch music buttons can control Apple Music and show the current title.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>The app connects to your ZeTime watch to relay its actions, including in the background.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>Upcoming calendar events can be sent to the watch.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Upcoming calendar events can be sent to the watch.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>The watch camera button takes photos from the app's Camera screen.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Watch actions can be relayed to your Mac's HTTP daemon on the local network.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To remember and find your car from the watch, with the iPhone in your pocket.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location is used for local weather and to find your car.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Photos triggered from the watch are saved to your photo library.</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>audio</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
+</dict>
+</plist>

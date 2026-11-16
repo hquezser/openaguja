@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "webhook": {
+    "name": "Webhook",
+    "actionURL": "https://example.com/hooks/watch",
+    "headers": {},
+    "telemetryUploadURL": "",
+    "telemetryHistoryURL": ""
+  },
+  "macDaemonURL": "http://my-mac.local:9876",
+  "routing": {
+    "targets": {
+      "play": "webhook",
+      "pause": "webhook",
+      "previous": "webhook",
+      "next": "webhook"
+    },
+    "hapticOnSuccess": true,
+    "hapticOnFailure": true,
+    "hapticPattern": "short"
+  },
+  "modes": [
+    {
+      "id": "desk",
+      "label": "Bureau",
+      "symbol": "desktopcomputer",
+      "targets": {
+        "play": "appleMusic",
+        "pause": "appleMusic",
+        "previous": "appleMusic",
+        "next": "appleMusic",
+        "camera": "macDaemon",
+        "find_phone": "macDaemon"
+      },
+      "bindings": {
+        "daemonCommands": {
+          "camera": "dictation_start"
+        },
+        "buttons": {
+          "3": 6
+        }
+      }
+    },
+    {
+      "id": "travel",
+      "label": "Voyage",
+      "symbol": "airplane",
+      "targets": {
+        "find_phone": "ringPhone",
+        "volume_up": "ignore",
+        "volume_down": "ignore"
+      },
+      "bindings": {
+        "musicViaNowPlaying": true
+      }
+    }
+  ]
+}

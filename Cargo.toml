@@ -1,0 +1,29 @@
+[package]
+name = "openaguja"
+version = "0.1.0"
+edition = "2024"
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/hquezser/openaguja"
+
+[features]
+default = ["cli"]
+cli = ["dep:btleplug", "dep:tokio", "dep:futures", "dep:image"]
+
+[dependencies]
+btleplug = { version = "0.11", optional = true }
+chrono = "0.4"
+clap = { version = "4", features = ["derive"] }
+futures = { version = "0.3", optional = true }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"], optional = true }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"], optional = true }
+uuid = { version = "1.29.0", optional = true }
+
+[[bin]]
+name = "openaguja"
+path = "src/main.rs"
+required-features = ["cli"]
+
+[workspace]
+members = [".", "openaguja-ffi", "macd"]

@@ -1,0 +1,5696 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
+    "—" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "—"
+          }
+        }
+      }
+    },
+    "“City” line of digital faces. Resend after a DST change in this zone." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ligne « Ville » des cadrans numériques. Renvoyer après un changement d'heure dans ce fuseau."
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@ : applied" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ : appliqué"
+          }
+        }
+      }
+    },
+    "%@ · %@ steps" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · %2$@ steps"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %2$@ pas"
+          }
+        }
+      }
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%@ to go" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "encore %@"
+          }
+        }
+      }
+    },
+    "%@ total" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ au total"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "%lld %%" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld %%"
+          }
+        }
+      }
+    },
+    "%lld °C · min %lld° max %lld°" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld °C · min %2$lld° max %3$lld°"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld °C · min %2$lld° max %3$lld°"
+          }
+        }
+      }
+    },
+    "%lld alert(s)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld alerte(s)"
+          }
+        }
+      }
+    },
+    "%lld bpm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld bpm"
+          }
+        }
+      }
+    },
+    "%lld entr(y/ies)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld entrée(s)"
+          }
+        }
+      }
+    },
+    "%lld entr(y/ies) · frames, errors, calls" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld entrée(s) · trames, erreurs, appels"
+          }
+        }
+      }
+    },
+    "%lld h" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
+          }
+        }
+      }
+    },
+    "%lld unsent telemetry event(s) will be permanently deleted." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld événement(s) de télémétrie non envoyé(s) seront définitivement supprimés."
+          }
+        }
+      }
+    },
+    "%lld/90 UTF-16 characters" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld/90 caractères UTF-16"
+          }
+        }
+      }
+    },
+    "%lld°" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld°"
+          }
+        }
+      }
+    },
+    "%lld° / %lld°" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld° / %2$lld°"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld° / %2$lld°"
+          }
+        }
+      }
+    },
+    "%u. %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$u. %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$u. %2$@"
+          }
+        }
+      }
+    },
+    "~5 min session" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Séance ~5 min"
+          }
+        }
+      }
+    },
+    "0" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "0"
+          }
+        }
+      }
+    },
+    "0 (QR / init pending)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "0 (QR / init en attente)"
+          }
+        }
+      }
+    },
+    "0x" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "0x"
+          }
+        }
+      }
+    },
+    "0x94 SET [0x00] triggers out-of-box init (defaults + persisted flag) — leaves the QR screen for the watch face, like the official app init." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "0x94 SET [0x00] déclenche l'initialisation d'usine (valeurs par défaut + drapeau persistant) — quitte l'écran QR pour le cadran, comme l'init de l'app officielle."
+          }
+        }
+      }
+    },
+    "7 days" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7 jours"
+          }
+        }
+      }
+    },
+    "12 h" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12 h"
+          }
+        }
+      }
+    },
+    "24 h" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "24 h"
+          }
+        }
+      }
+    },
+    "30 days" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 jours"
+          }
+        }
+      }
+    },
+    "90 days" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "90 jours"
+          }
+        }
+      }
+    },
+    "12000" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "12000"
+          }
+        }
+      }
+    },
+    "A JSON profile holds the webhook config, Mac daemon URL, routing targets and contextual modes — never a token." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un profil JSON contient la config webhook, l'URL du daemon Mac, les cibles de routage et les modes contextuels — jamais de jeton."
+          }
+        }
+      }
+    },
+    "About" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos"
+          }
+        }
+      }
+    },
+    "Action URL" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL d'action"
+          }
+        }
+      }
+    },
+    "Actions" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actions"
+          }
+        }
+      }
+    },
+    "Activate a routing mode" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer un mode de routage"
+          }
+        }
+      }
+    },
+    "Activate mode ${mode}" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer le mode ${mode}"
+          }
+        }
+      }
+    },
+    "Active" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actif"
+          }
+        }
+      }
+    },
+    "active min" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min actives"
+          }
+        }
+      }
+    },
+    "Active mode" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode actif"
+          }
+        }
+      }
+    },
+    "Active only" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actives seulement"
+          }
+        }
+      }
+    },
+    "Active time" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temps actif"
+          }
+        }
+      }
+    },
+    "Activity" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activité"
+          }
+        }
+      }
+    },
+    "Activity tracking" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivi d'activité"
+          }
+        }
+      }
+    },
+    "Add" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter"
+          }
+        }
+      }
+    },
+    "Add alarm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajout d'alarme"
+          }
+        }
+      }
+    },
+    "Add header" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un en-tête"
+          }
+        }
+      }
+    },
+    "Add reply" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter une réponse"
+          }
+        }
+      }
+    },
+    "Advanced tools" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Outils avancés"
+          }
+        }
+      }
+    },
+    "Advanced tools enabled" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Outils avancés activés"
+          }
+        }
+      }
+    },
+    "After %lld min without moving" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Après %lld min sans bouger"
+          }
+        }
+      }
+    },
+    "Age: %lld" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Âge : %lld ans"
+          }
+        }
+      }
+    },
+    "Airplane" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avion"
+          }
+        }
+      }
+    },
+    "Alarm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alarme"
+          }
+        }
+      }
+    },
+    "Alarm count" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre d'alarmes"
+          }
+        }
+      }
+    },
+    "Alarm on the iPhone, even in silent mode and background, with the torch; stop from the app or auto after 60 s." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alarme sur l'iPhone, même en mode silencieux et en arrière-plan, avec la lampe ; arrêt depuis l'app ou automatique après 60 s."
+          }
+        }
+      }
+    },
+    "Alarms" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alarmes"
+          }
+        }
+      }
+    },
+    "Alarms & alerts" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alarmes & alertes"
+          }
+        }
+      }
+    },
+    "Alert" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerte"
+          }
+        }
+      }
+    },
+    "Alerts" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alertes"
+          }
+        }
+      }
+    },
+    "All" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout"
+          }
+        }
+      }
+    },
+    "App unavailable" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App indisponible"
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apparence"
+          }
+        }
+      }
+    },
+    "Apple Music" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Music"
+          }
+        }
+      }
+    },
+    "Apple Music, incoming calls, ringtone, camera" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Music, appels entrants, sonnerie, appareil photo"
+          }
+        }
+      }
+    },
+    "Applies a ZeTime mode: action targets, Mac commands and watch button remap." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Applique un mode ZeTime : cibles des actions, commandes Mac et remap des boutons de la montre."
+          }
+        }
+      }
+    },
+    "Apply" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appliquer"
+          }
+        }
+      }
+    },
+    "Apply “%@”" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appliquer « %@ »"
+          }
+        }
+      }
+    },
+    "Auto detection" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Détection automatique"
+          }
+        }
+      }
+    },
+    "Auto HR measure" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesure cardio auto"
+          }
+        }
+      }
+    },
+    "Auto sleep" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sommeil auto"
+          }
+        }
+      }
+    },
+    "Automatic sleep" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sommeil automatique"
+          }
+        }
+      }
+    },
+    "Available data" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Données disponibles"
+          }
+        }
+      }
+    },
+    "Average" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moyenne"
+          }
+        }
+      }
+    },
+    "Awake" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éveil"
+          }
+        }
+      }
+    },
+    "Balanced" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Équilibré"
+          }
+        }
+      }
+    },
+    "Base" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Base"
+          }
+        }
+      }
+    },
+    "Battery" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterie"
+          }
+        }
+      }
+    },
+    "Battery %lld %%" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterie %lld %%"
+          }
+        }
+      }
+    },
+    "Bedtime / wake" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coucher / réveil"
+          }
+        }
+      }
+    },
+    "Beep ×1" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bip ×1"
+          }
+        }
+      }
+    },
+    "Beep ×2" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bip ×2"
+          }
+        }
+      }
+    },
+    "Bind QR: start" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bind QR : début"
+          }
+        }
+      }
+    },
+    "BLE frames" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trames BLE"
+          }
+        }
+      }
+    },
+    "Blue" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bleu"
+          }
+        }
+      }
+    },
+    "Bluetooth not authorized" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bluetooth non autorisé"
+          }
+        }
+      }
+    },
+    "Bluetooth not handled" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bluetooth non pris en charge"
+          }
+        }
+      }
+    },
+    "Bluetooth off" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bluetooth désactivé"
+          }
+        }
+      }
+    },
+    "Bottom button" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouton bas"
+          }
+        }
+      }
+    },
+    "bpm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bpm"
+          }
+        }
+      }
+    },
+    "Brightness" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luminosité"
+          }
+        }
+      }
+    },
+    "Button %u" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouton %u"
+          }
+        }
+      }
+    },
+    "Bytes" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Octets"
+          }
+        }
+      }
+    },
+    "Calendar" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agenda"
+          }
+        }
+      }
+    },
+    "Calendar %lld/%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Calendar %1$lld/%2$lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agenda %1$lld/%2$lld"
+          }
+        }
+      }
+    },
+    "Calendar access denied (iOS Settings → Privacy → Calendars)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accès à l'agenda refusé (Réglages iOS → Confidentialité → Calendriers)"
+          }
+        }
+      }
+    },
+    "Calendar: clearing" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agenda : effacement"
+          }
+        }
+      }
+    },
+    "Calendar: month view" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agenda : vue mensuelle"
+          }
+        }
+      }
+    },
+    "Call" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appel"
+          }
+        }
+      }
+    },
+    "Call ended" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appel terminé"
+          }
+        }
+      }
+    },
+    "Call rejected" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appel rejeté"
+          }
+        }
+      }
+    },
+    "Calls" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appels"
+          }
+        }
+      }
+    },
+    "Calories" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calories"
+          }
+        }
+      }
+    },
+    "Camera" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appareil photo"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        }
+      }
+    },
+    "Cardio" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardio"
+          }
+        }
+      }
+    },
+    "Cardio %lld min (mode %@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cardio %1$lld min (mode %2$@)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardio %1$lld min (mode %2$@)"
+          }
+        }
+      }
+    },
+    "Category" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catégorie"
+          }
+        }
+      }
+    },
+    "Choose time zone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir le fuseau"
+          }
+        }
+      }
+    },
+    "Chosen city" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ville choisie"
+          }
+        }
+      }
+    },
+    "City" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ville"
+          }
+        }
+      }
+    },
+    "Clear" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vider"
+          }
+        }
+      }
+    },
+    "Clear HR" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer le cardio"
+          }
+        }
+      }
+    },
+    "Clear log" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vider le journal"
+          }
+        }
+      }
+    },
+    "Clear log?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vider le journal ?"
+          }
+        }
+      }
+    },
+    "Clear queue" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vider la file"
+          }
+        }
+      }
+    },
+    "Clear sleep" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer le sommeil"
+          }
+        }
+      }
+    },
+    "Clear steps" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer les pas"
+          }
+        }
+      }
+    },
+    "Clear the offline queue?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vider la file hors-ligne ?"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer"
+          }
+        }
+      }
+    },
+    "Color" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleur"
+          }
+        }
+      }
+    },
+    "Command “%@” unknown to daemon" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commande « %@ » inconnue du daemon"
+          }
+        }
+      }
+    },
+    "Complete setup" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminer la configuration"
+          }
+        }
+      }
+    },
+    "Complete setup → watch face" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminer la configuration → cadran"
+          }
+        }
+      }
+    },
+    "Complete setup?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminer la configuration ?"
+          }
+        }
+      }
+    },
+    "Confirm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmer"
+          }
+        }
+      }
+    },
+    "Connected" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connectée"
+          }
+        }
+      }
+    },
+    "Connecting…" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connexion…"
+          }
+        }
+      }
+    },
+    "Connection" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connexion"
+          }
+        }
+      }
+    },
+    "Connection OK" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connexion OK"
+          }
+        }
+      }
+    },
+    "Connection lost" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perte de connexion"
+          }
+        }
+      }
+    },
+    "Connections" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connexions"
+          }
+        }
+      }
+    },
+    "Controls the Apple Music player; the current title shows on the watch Music screen." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilote le lecteur Apple Music ; le titre en cours s'affiche sur l'écran Musique de la montre."
+          }
+        }
+      }
+    },
+    "Copied to clipboard" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copié dans le presse-papiers"
+          }
+        }
+      }
+    },
+    "Copy" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier"
+          }
+        }
+      }
+    },
+    "Copy frame" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier la trame"
+          }
+        }
+      }
+    },
+    "Copy line" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier la ligne"
+          }
+        }
+      }
+    },
+    "Copy token" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier le jeton"
+          }
+        }
+      }
+    },
+    "Copy visible entries" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier les entrées visibles"
+          }
+        }
+      }
+    },
+    "Crown" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couronne"
+          }
+        }
+      }
+    },
+    "Crown · long" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couronne · appui long"
+          }
+        }
+      }
+    },
+    "Crown · long press" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couronne · appui long"
+          }
+        }
+      }
+    },
+    "Crown · short" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couronne · appui court"
+          }
+        }
+      }
+    },
+    "Crown · short press" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couronne · appui court"
+          }
+        }
+      }
+    },
+    "Current" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actuel"
+          }
+        }
+      }
+    },
+    "Current token" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeton actuel"
+          }
+        }
+      }
+    },
+    "Custom reminder" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rappel perso"
+          }
+        }
+      }
+    },
+    "Daemon not configured" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemon non configuré"
+          }
+        }
+      }
+    },
+    "Daemon token missing (settings)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeton du daemon manquant (réglages)"
+          }
+        }
+      }
+    },
+    "Dark" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sombre"
+          }
+        }
+      }
+    },
+    "Date" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date"
+          }
+        }
+      }
+    },
+    "Date format" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format de date"
+          }
+        }
+      }
+    },
+    "Day" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jour"
+          }
+        }
+      }
+    },
+    "Day by day" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jour par jour"
+          }
+        }
+      }
+    },
+    "DD/MM/YY" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "JJ/MM/AA"
+          }
+        }
+      }
+    },
+    "Debug" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        }
+      }
+    },
+    "Deep" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profond"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
+          }
+        }
+      }
+    },
+    "Delete alarm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suppression d'alarme"
+          }
+        }
+      }
+    },
+    "Delete from watch after sync" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer de la montre après synchro"
+          }
+        }
+      }
+    },
+    "Delete reply" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer la réponse"
+          }
+        }
+      }
+    },
+    "Destination" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destination"
+          }
+        }
+      }
+    },
+    "Deutsch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deutsch"
+          }
+        }
+      }
+    },
+    "Developer mode" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode développeur"
+          }
+        }
+      }
+    },
+    "Dim screen" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assombrir l'écran"
+          }
+        }
+      }
+    },
+    "Disabled" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactivé"
+          }
+        }
+      }
+    },
+    "Disconnected" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Déconnectée"
+          }
+        }
+      }
+    },
+    "Display" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affichage"
+          }
+        }
+      }
+    },
+    "Display duration" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durée d'affichage"
+          }
+        }
+      }
+    },
+    "Display name (e.g. GENEVA)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom affiché (ex. GENÈVE)"
+          }
+        }
+      }
+    },
+    "Distance" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Distance"
+          }
+        }
+      }
+    },
+    "Do not disturb" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne pas déranger"
+          }
+        }
+      }
+    },
+    "Double" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Double"
+          }
+        }
+      }
+    },
+    "Duplicate mode id(s): %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identifiant(s) de mode en double : %@"
+          }
+        }
+      }
+    },
+    "E-mail" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-mail"
+          }
+        }
+      }
+    },
+    "E-mails" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-mails"
+          }
+        }
+      }
+    },
+    "Each action routed to “Mac (local HTTP)” sends POST <url>/cmd/<action> with a Bearer token — works with the iPhone locked, same Wi-Fi only. Commands: Routing tab → each action’s target." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque action routée vers « Mac (HTTP local) » envoie POST <url>/cmd/<action> avec un jeton Bearer — fonctionne iPhone verrouillé, même Wi-Fi uniquement. Commandes : onglet Routage → cible de chaque action."
+          }
+        }
+      }
+    },
+    "Economy" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Économie"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier"
+          }
+        }
+      }
+    },
+    "Edit alarm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modification d'alarme"
+          }
+        }
+      }
+    },
+    "Edit reply" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier la réponse"
+          }
+        }
+      }
+    },
+    "Empty log" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Journal vide"
+          }
+        }
+      }
+    },
+    "Enable" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer"
+          }
+        }
+      }
+    },
+    "End" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fin"
+          }
+        }
+      }
+    },
+    "Energy profile" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil énergétique"
+          }
+        }
+      }
+    },
+    "English" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English"
+          }
+        }
+      }
+    },
+    "Entry" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrée"
+          }
+        }
+      }
+    },
+    "Error" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreur"
+          }
+        }
+      }
+    },
+    "Español" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Español"
+          }
+        }
+      }
+    },
+    "Every %u min" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les %u min"
+          }
+        }
+      }
+    },
+    "Every day" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tous les jours"
+          }
+        }
+      }
+    },
+    "Everyday" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Au quotidien"
+          }
+        }
+      }
+    },
+    "Experimental: up to 17 events" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expérimental : jusqu'à 17 événements"
+          }
+        }
+      }
+    },
+    "Export" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exporter"
+          }
+        }
+      }
+    },
+    "Export CSV" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exporter en CSV"
+          }
+        }
+      }
+    },
+    "Female" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Femme"
+          }
+        }
+      }
+    },
+    "Fetch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Récupérer"
+          }
+        }
+      }
+    },
+    "Find my phone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trouver mon téléphone"
+          }
+        }
+      }
+    },
+    "Find phone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trouver le téléphone"
+          }
+        }
+      }
+    },
+    "Find-phone ringtone active" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonnerie « trouver le téléphone » active"
+          }
+        }
+      }
+    },
+    "Firmware" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Firmware"
+          }
+        }
+      }
+    },
+    "Forces a quick HR reading (5-min interval during the measurement, restored after), then records it as RHR." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Force une mesure cardio rapide (intervalle 5 min pendant la mesure, restauré ensuite), puis l'enregistre comme FCR."
+          }
+        }
+      }
+    },
+    "Forget the watch?" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oublier la montre ?"
+          }
+        }
+      }
+    },
+    "Forget watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oublier la montre"
+          }
+        }
+      }
+    },
+    "Forgetting the watch restarts the search. Then select the peripheral on the Watch tab." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oublier la montre relance la recherche. Sélectionnez ensuite le périphérique dans l'onglet Montre."
+          }
+        }
+      }
+    },
+    "Frame" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trame"
+          }
+        }
+      }
+    },
+    "French" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Français"
+          }
+        }
+      }
+    },
+    "From" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De"
+          }
+        }
+      }
+    },
+    "Function %u" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonction %u"
+          }
+        }
+      }
+    },
+    "Gadgetbridge" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gadgetbridge"
+          }
+        }
+      }
+    },
+    "Gaps" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trous"
+          }
+        }
+      }
+    },
+    "Goal %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectif %@"
+          }
+        }
+      }
+    },
+    "Goal reached" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectif atteint"
+          }
+        }
+      }
+    },
+    "Goals" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectifs"
+          }
+        }
+      }
+    },
+    "Green" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vert"
+          }
+        }
+      }
+    },
+    "Hands" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aiguilles"
+          }
+        }
+      }
+    },
+    "Haptic feedback" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retour haptique"
+          }
+        }
+      }
+    },
+    "Hardware" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matériel"
+          }
+        }
+      }
+    },
+    "Header" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En-tête"
+          }
+        }
+      }
+    },
+    "Health" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Santé"
+          }
+        }
+      }
+    },
+    "Health (server)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Santé (serveur)"
+          }
+        }
+      }
+    },
+    "Heart rate" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fréquence cardiaque"
+          }
+        }
+      }
+    },
+    "Heart rate · today" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardio · aujourd'hui"
+          }
+        }
+      }
+    },
+    "Height: %lld cm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taille : %lld cm"
+          }
+        }
+      }
+    },
+    "Hide" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masquer"
+          }
+        }
+      }
+    },
+    "Hide token" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masquer le jeton"
+          }
+        }
+      }
+    },
+    "History URL not configured" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL d'historique non configurée"
+          }
+        }
+      }
+    },
+    "Hours" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heures"
+          }
+        }
+      }
+    },
+    "HR alert" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerte cardio"
+          }
+        }
+      }
+    },
+    "HR every %u min · auto-sync on connect if older than %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "HR every %1$u min · auto-sync on connect if older than %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardio toutes les %1$u min · synchro auto à la connexion si plus ancienne que %2$@"
+          }
+        }
+      }
+    },
+    "HR frequency and sync cadence: a single setting in Settings → Sensors & battery (Economy / Balanced / Precise)." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fréquence cardio et cadence de synchro : un seul réglage dans Réglages → Capteurs & batterie (Économie / Équilibré / Précis)."
+          }
+        }
+      }
+    },
+    "HR interval" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intervalle cardio"
+          }
+        }
+      }
+    },
+    "HTTP" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HTTP"
+          }
+        }
+      }
+    },
+    "HTTP %@ · %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "HTTP %1$@ · %2$lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HTTP %1$@ · %2$lld"
+          }
+        }
+      }
+    },
+    "HTTP %lld" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HTTP %lld"
+          }
+        }
+      }
+    },
+    "Ignore" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ignorer"
+          }
+        }
+      }
+    },
+    "Imperial" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impérial"
+          }
+        }
+      }
+    },
+    "Import" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer"
+          }
+        }
+      }
+    },
+    "Import a profile in Settings → Profile, or load the bundled example." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importez un profil dans Réglages → Profil, ou chargez l'exemple fourni."
+          }
+        }
+      }
+    },
+    "In progress" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En cours"
+          }
+        }
+      }
+    },
+    "Inactivity" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inactivité"
+          }
+        }
+      }
+    },
+    "Inactivity alert" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alerte d'inactivité"
+          }
+        }
+      }
+    },
+    "Incoming call" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appel entrant"
+          }
+        }
+      }
+    },
+    "Indigo = deep, cyan = light, mint = REM." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indigo = profond, cyan = léger, menthe = paradoxal."
+          }
+        }
+      }
+    },
+    "Info" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
+          }
+        }
+      }
+    },
+    "Init (0x94)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Init (0x94)"
+          }
+        }
+      }
+    },
+    "initFlag" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "initFlag"
+          }
+        }
+      }
+    },
+    "Invalid history URL" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL d'historique invalide"
+          }
+        }
+      }
+    },
+    "iOS does not pass the caller’s name or number to apps: the watch shows “Incoming call”. Works while the app is active or woken by the watch." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS ne transmet pas le nom ni le numéro de l'appelant aux apps : la montre affiche « Appel entrant ». Fonctionne quand l'app est active ou réveillée par la montre."
+          }
+        }
+      }
+    },
+    "iOS only opens a shortcut when the app is foregrounded: in background the action is ignored (visible in the log)." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS n'ouvre un raccourci qu'avec l'app au premier plan : en arrière-plan l'action est ignorée (visible dans le journal)."
+          }
+        }
+      }
+    },
+    "Italiano" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Italiano"
+          }
+        }
+      }
+    },
+    "kcal" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kcal"
+          }
+        }
+      }
+    },
+    "km" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "km"
+          }
+        }
+      }
+    },
+    "Lab" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lab"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue"
+          }
+        }
+      }
+    },
+    "Last %lld bpm · %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Last %1$lld bpm · %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernière %1$lld bpm · %2$@"
+          }
+        }
+      }
+    },
+    "Last 7 days" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "7 derniers jours"
+          }
+        }
+      }
+    },
+    "Last action" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernière action"
+          }
+        }
+      }
+    },
+    "Last HTTP status" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernier statut HTTP"
+          }
+        }
+      }
+    },
+    "Last reading" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernière mesure"
+          }
+        }
+      }
+    },
+    "Last send %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernier envoi %@"
+          }
+        }
+      }
+    },
+    "Last successful send" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernier envoi réussi"
+          }
+        }
+      }
+    },
+    "Last sync · %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernière synchro · %@"
+          }
+        }
+      }
+    },
+    "Last sync: %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernière synchro : %@"
+          }
+        }
+      }
+    },
+    "Last test" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernier test"
+          }
+        }
+      }
+    },
+    "Left" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gauche"
+          }
+        }
+      }
+    },
+    "License" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Licence"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clair"
+          }
+        }
+      }
+    },
+    "Live" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direct"
+          }
+        }
+      }
+    },
+    "Load example" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Charger l'exemple"
+          }
+        }
+      }
+    },
+    "Local times; bedtime in violet, wake in green." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heures locales ; coucher en violet, réveil en vert."
+          }
+        }
+      }
+    },
+    "Log" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Journal"
+          }
+        }
+      }
+    },
+    "Long" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Long"
+          }
+        }
+      }
+    },
+    "Long beep" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bip long"
+          }
+        }
+      }
+    },
+    "Long press" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appui long"
+          }
+        }
+      }
+    },
+    "Long vibration" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibration longue"
+          }
+        }
+      }
+    },
+    "Looking for watch…" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherche de la montre…"
+          }
+        }
+      }
+    },
+    "Low battery" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterie faible"
+          }
+        }
+      }
+    },
+    "Low-level diagnostics" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diagnostic bas niveau"
+          }
+        }
+      }
+    },
+    "Mac (local HTTP)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mac (HTTP local)"
+          }
+        }
+      }
+    },
+    "Mac daemon" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemon Mac"
+          }
+        }
+      }
+    },
+    "Mac daemon not configured (settings)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daemon Mac non configuré (réglages)"
+          }
+        }
+      }
+    },
+    "Male" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Homme"
+          }
+        }
+      }
+    },
+    "Max" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max"
+          }
+        }
+      }
+    },
+    "Maximum: %lld bpm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum : %lld bpm"
+          }
+        }
+      }
+    },
+    "Measure my resting heart rate" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesurer ma fréquence cardiaque au repos"
+          }
+        }
+      }
+    },
+    "Measure RHR" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesurer la FCR"
+          }
+        }
+      }
+    },
+    "Media" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Média"
+          }
+        }
+      }
+    },
+    "Medication" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Médicament"
+          }
+        }
+      }
+    },
+    "Memory dump (lab)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dump mémoire (lab)"
+          }
+        }
+      }
+    },
+    "Memory dump / init (lab)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dump mémoire / init (lab)"
+          }
+        }
+      }
+    },
+    "Message" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Message"
+          }
+        }
+      }
+    },
+    "Metric" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Métrique"
+          }
+        }
+      }
+    },
+    "Min / max" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min / max"
+          }
+        }
+      }
+    },
+    "Minimum: %lld bpm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimum : %lld bpm"
+          }
+        }
+      }
+    },
+    "Missed call" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appel manqué"
+          }
+        }
+      }
+    },
+    "Missed calls" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appels manqués"
+          }
+        }
+      }
+    },
+    "Missing token" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeton manquant"
+          }
+        }
+      }
+    },
+    "MM/DD/YY" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MM/JJ/AA"
+          }
+        }
+      }
+    },
+    "Mode" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode"
+          }
+        }
+      }
+    },
+    "Mode %@ activated" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode %@ activé"
+          }
+        }
+      }
+    },
+    "Mode %@: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mode %1$@: %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode %1$@ : %2$@"
+          }
+        }
+      }
+    },
+    "Modes" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modes"
+          }
+        }
+      }
+    },
+    "Music" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Musique"
+          }
+        }
+      }
+    },
+    "Music buttons" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Boutons musique"
+          }
+        }
+      }
+    },
+    "Music state" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "État de la musique"
+          }
+        }
+      }
+    },
+    "Music volume" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volume musique"
+          }
+        }
+      }
+    },
+    "Music, calls & alerts" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Musique, appels et alertes"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom"
+          }
+        }
+      }
+    },
+    "Nederlands" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nederlands"
+          }
+        }
+      }
+    },
+    "Network error: %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreur réseau : %@"
+          }
+        }
+      }
+    },
+    "never" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "jamais"
+          }
+        }
+      }
+    },
+    "Never synced — pull to fetch watch data." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamais synchronisée — tirez pour récupérer les données de la montre."
+          }
+        }
+      }
+    },
+    "New alarm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle alarme"
+          }
+        }
+      }
+    },
+    "New reply" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle réponse"
+          }
+        }
+      }
+    },
+    "New token (empty = unchanged)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouveau jeton (vide = inchangé)"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivant"
+          }
+        }
+      }
+    },
+    "Night mode" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode nuit"
+          }
+        }
+      }
+    },
+    "No alarms on the watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune alarme sur la montre"
+          }
+        }
+      }
+    },
+    "No data for this period." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune donnée sur cette période."
+          }
+        }
+      }
+    },
+    "No day" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun jour"
+          }
+        }
+      }
+    },
+    "No entries match the filter" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune entrée ne correspond au filtre"
+          }
+        }
+      }
+    },
+    "No measurement that day" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune mesure ce jour-là"
+          }
+        }
+      }
+    },
+    "No measurement today (enable auto measure in Settings → Sensors)." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune mesure aujourd'hui (activez la mesure auto dans Réglages → Capteurs)."
+          }
+        }
+      }
+    },
+    "No modes yet" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun mode pour l'instant"
+          }
+        }
+      }
+    },
+    "No quick replies on the watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune réponse rapide sur la montre"
+          }
+        }
+      }
+    },
+    "No response from watch (%@)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas de réponse de la montre (%@)"
+          }
+        }
+      }
+    },
+    "No signal" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal indisponible"
+          }
+        }
+      }
+    },
+    "No sleep data" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune donnée de sommeil"
+          }
+        }
+      }
+    },
+    "No sleep data for last night." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune donnée de sommeil pour la nuit dernière."
+          }
+        }
+      }
+    },
+    "No weather data yet." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas encore de données météo."
+          }
+        }
+      }
+    },
+    "none" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "aucun"
+          }
+        }
+      }
+    },
+    "None" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun"
+          }
+        }
+      }
+    },
+    "Not affiliated with MyKronoz." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non affilié à MyKronoz."
+          }
+        }
+      }
+    },
+    "not configured" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "non configuré"
+          }
+        }
+      }
+    },
+    "Notification" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification"
+          }
+        }
+      }
+    },
+    "Notification text" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texte des notifications"
+          }
+        }
+      }
+    },
+    "Notifications" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
+          }
+        }
+      }
+    },
+    "Notifications from other iPhone apps go through system Bluetooth (ANCS), not this app." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les notifications des autres apps de l'iPhone passent par le Bluetooth système (ANCS), pas par cette app."
+          }
+        }
+      }
+    },
+    "off" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "désactivé"
+          }
+        }
+      }
+    },
+    "offline" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hors-ligne"
+          }
+        }
+      }
+    },
+    "Offline queue" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File hors-ligne"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "on" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "activé"
+          }
+        }
+      }
+    },
+    "On failure / offline" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En cas d'échec / hors-ligne"
+          }
+        }
+      }
+    },
+    "On success (HTTP 200)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En cas de succès (HTTP 200)"
+          }
+        }
+      }
+    },
+    "On the watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur la montre"
+          }
+        }
+      }
+    },
+    "Only setting that drives auto heart-rate measure; spot measures in Activity." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seul réglage qui pilote la mesure cardio auto ; mesures ponctuelles dans Activité."
+          }
+        }
+      }
+    },
+    "Only telemetry uploads are queued while offline. Webhook actions are sent immediately and are not queued." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seuls les envois de télémétrie sont mis en file hors-ligne. Les actions webhook sont envoyées immédiatement et ne sont pas mises en file."
+          }
+        }
+      }
+    },
+    "OpenAguja" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OpenAguja"
+          }
+        }
+      }
+    },
+    "Other" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autre"
+          }
+        }
+      }
+    },
+    "Pair a watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Associer une montre"
+          }
+        }
+      }
+    },
+    "Paris, New_York, Tokyo…" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paris, New_York, Tokyo…"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        }
+      }
+    },
+    "Pending" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En attente"
+          }
+        }
+      }
+    },
+    "Per-event vibrations" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibrations par événement"
+          }
+        }
+      }
+    },
+    "Period" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Période"
+          }
+        }
+      }
+    },
+    "Phone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Téléphone"
+          }
+        }
+      }
+    },
+    "Photo requested" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo demandée"
+          }
+        }
+      }
+    },
+    "Physical" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Physiques"
+          }
+        }
+      }
+    },
+    "Place" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lieu"
+          }
+        }
+      }
+    },
+    "Play" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lecture"
+          }
+        }
+      }
+    },
+    "Polski" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Polski"
+          }
+        }
+      }
+    },
+    "Portuguese" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Português"
+          }
+        }
+      }
+    },
+    "POST %@/cmd/%@ to the Mac HTTP daemon (openaguja-macd, same Wi-Fi) with a Bearer token — works with the phone locked. Commands carry the action name; URL & token: Settings → Connections → Mac." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "POST %1$@/cmd/%2$@ to the Mac HTTP daemon (openaguja-macd, same Wi-Fi) with a Bearer token — works with the phone locked. Commands carry the action name; URL & token: Settings → Connections → Mac."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "POST %1$@/cmd/%2$@ vers le daemon HTTP du Mac (openaguja-macd, même Wi-Fi) avec un jeton Bearer — fonctionne téléphone verrouillé. Les commandes portent le nom de l'action ; URL et jeton : Réglages → Connexions → Mac."
+          }
+        }
+      }
+    },
+    "POST JSON to the configured URL (Settings → Webhook server) with `{\"action\": \"%@\", …}` — the receiver must answer 2xx." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "POST JSON vers l'URL configurée (Réglages → Serveur Webhook) avec `{\"action\": \"%@\", …}` — le récepteur doit répondre 2xx."
+          }
+        }
+      }
+    },
+    "Precise" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Précis"
+          }
+        }
+      }
+    },
+    "Press the crown to show the colored night screen." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appuyez sur la couronne pour afficher l'écran de nuit coloré."
+          }
+        }
+      }
+    },
+    "Previous" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Précédent"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil"
+          }
+        }
+      }
+    },
+    "Profile (calorie calc)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil (calcul des calories)"
+          }
+        }
+      }
+    },
+    "QR bind: end" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bind QR : fin"
+          }
+        }
+      }
+    },
+    "Quick HR" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardio rapide"
+          }
+        }
+      }
+    },
+    "Quick replies" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réponses rapides"
+          }
+        }
+      }
+    },
+    "Quick reply" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réponse rapide"
+          }
+        }
+      }
+    },
+    "Raise to wake" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lever pour activer"
+          }
+        }
+      }
+    },
+    "Range" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plage"
+          }
+        }
+      }
+    },
+    "Re-read" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relire"
+          }
+        }
+      }
+    },
+    "Re-read battery" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relire la batterie"
+          }
+        }
+      }
+    },
+    "Re-read on watch %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relu sur la montre %@"
+          }
+        }
+      }
+    },
+    "Read initFlag" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lire initFlag"
+          }
+        }
+      }
+    },
+    "Read-only (opcode 0xEE, 64 bytes per request). An unmapped address can freeze the watch — only dump already-validated ranges." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lecture seule (opcode 0xEE, 64 octets par requête). Une adresse non mappée peut figer la montre — ne dumpez que des plages déjà validées."
+          }
+        }
+      }
+    },
+    "Read: %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lu : %@"
+          }
+        }
+      }
+    },
+    "Reading %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lecture %@"
+          }
+        }
+      }
+    },
+    "Reading buttons" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lecture des boutons"
+          }
+        }
+      }
+    },
+    "Readings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesures"
+          }
+        }
+      }
+    },
+    "Received" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réception"
+          }
+        }
+      }
+    },
+    "Records are removed from the watch once synced." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les enregistrements sont supprimés de la montre une fois synchronisés."
+          }
+        }
+      }
+    },
+    "Red = resting, orange = average." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rouge = repos, orange = moyenne."
+          }
+        }
+      }
+    },
+    "Refresh" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualiser"
+          }
+        }
+      }
+    },
+    "Refresh & send" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualiser et envoyer"
+          }
+        }
+      }
+    },
+    "Refused by watch (%@, code %u)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Refused by watch (%1$@, code %2$u)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refusé par la montre (%1$@, code %2$u)"
+          }
+        }
+      }
+    },
+    "Reminder text" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texte du rappel"
+          }
+        }
+      }
+    },
+    "Repeat" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Répétition"
+          }
+        }
+      }
+    },
+    "Reply text" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texte de la réponse"
+          }
+        }
+      }
+    },
+    "Rescan" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Relancer la recherche"
+          }
+        }
+      }
+    },
+    "Resting %lld bpm · %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Resting %1$lld bpm · %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repos %1$lld bpm · %2$@"
+          }
+        }
+      }
+    },
+    "Result" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Résultat"
+          }
+        }
+      }
+    },
+    "Reveal" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher"
+          }
+        }
+      }
+    },
+    "Right" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Droit"
+          }
+        }
+      }
+    },
+    "Ring" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faire sonner"
+          }
+        }
+      }
+    },
+    "Ring iPhone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faire sonner l'iPhone"
+          }
+        }
+      }
+    },
+    "Ring phone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faire sonner le téléphone"
+          }
+        }
+      }
+    },
+    "Ring the watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faire sonner la montre"
+          }
+        }
+      }
+    },
+    "Ring watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faire sonner la montre"
+          }
+        }
+      }
+    },
+    "Rings even in silent mode, with the torch, and stops by itself after 60 s." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonne même en mode silencieux, avec la lampe, et s'arrête seule après 60 s."
+          }
+        }
+      }
+    },
+    "Routing" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Routage"
+          }
+        }
+      }
+    },
+    "Routing mode" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode de routage"
+          }
+        }
+      }
+    },
+    "RSSI %lld dBm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RSSI %lld dBm"
+          }
+        }
+      }
+    },
+    "Samples HR every ~5 min during the session; the original interval is restored on stop (90-min safety net)." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesure le cardio toutes les ~5 min pendant la séance ; l'intervalle d'origine est restauré à l'arrêt (sécurité 90 min)."
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chercher"
+          }
+        }
+      }
+    },
+    "Second time zone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuseau secondaire"
+          }
+        }
+      }
+    },
+    "Send “${title}” to the watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoyer « ${title} » à la montre"
+          }
+        }
+      }
+    },
+    "Send a notification to the watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoyer une notification à la montre"
+          }
+        }
+      }
+    },
+    "Send calendar (7 days)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoyer l'agenda (7 jours)"
+          }
+        }
+      }
+    },
+    "Send now" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoyer maintenant"
+          }
+        }
+      }
+    },
+    "Send to watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoyer à la montre"
+          }
+        }
+      }
+    },
+    "Send weather to watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoyer la météo à la montre"
+          }
+        }
+      }
+    },
+    "Sends 0x94 SET [0x00]: out-of-box init + persisted initFlag=1 — the watch leaves QR for the watch face." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoie 0x94 SET [0x00] : init d'usine + initFlag=1 persistant — la montre quitte le QR pour le cadran."
+          }
+        }
+      }
+    },
+    "Sensors & battery" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capteurs & batterie"
+          }
+        }
+      }
+    },
+    "Sent" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoi"
+          }
+        }
+      }
+    },
+    "Serial number" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numéro de série"
+          }
+        }
+      }
+    },
+    "Server" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serveur"
+          }
+        }
+      }
+    },
+    "Server charts (sleep, HR, steps)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graphiques serveur (sommeil, cardio, pas)"
+          }
+        }
+      }
+    },
+    "Server reachable, token accepted (HTTP %lld)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serveur joignable, jeton accepté (HTTP %lld)"
+          }
+        }
+      }
+    },
+    "Set the watch time" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Régler l'heure de la montre"
+          }
+        }
+      }
+    },
+    "Set time" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Régler l'heure"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages"
+          }
+        }
+      }
+    },
+    "Sex" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sexe"
+          }
+        }
+      }
+    },
+    "Share dump…" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager le dump…"
+          }
+        }
+      }
+    },
+    "Share…" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager…"
+          }
+        }
+      }
+    },
+    "Short" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Court"
+          }
+        }
+      }
+    },
+    "Short press" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appui court"
+          }
+        }
+      }
+    },
+    "Shortcut name" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom du raccourci"
+          }
+        }
+      }
+    },
+    "Show incoming calls" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher les appels entrants"
+          }
+        }
+      }
+    },
+    "Show token" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher le jeton"
+          }
+        }
+      }
+    },
+    "Shows a message on the ZeTime." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affiche un message sur la ZeTime."
+          }
+        }
+      }
+    },
+    "Signal" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal"
+          }
+        }
+      }
+    },
+    "Signal %lld dBm" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal %lld dBm"
+          }
+        }
+      }
+    },
+    "Silent" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silencieux"
+          }
+        }
+      }
+    },
+    "Single source of truth: the watch's “Auto HR measure” setting follows this profile (Settings → Watch → Health)." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source unique : le réglage « Mesure cardio auto » de la montre suit ce profil (Réglages → Montre → Santé)."
+          }
+        }
+      }
+    },
+    "Size" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taille"
+          }
+        }
+      }
+    },
+    "Sleep" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sommeil"
+          }
+        }
+      }
+    },
+    "Sleep · last night" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sommeil · nuit dernière"
+          }
+        }
+      }
+    },
+    "Sleep tracking" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivi du sommeil"
+          }
+        }
+      }
+    },
+    "Sleep window" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fenêtre de sommeil"
+          }
+        }
+      }
+    },
+    "SMS" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SMS"
+          }
+        }
+      }
+    },
+    "Snooze duration" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durée de répétition"
+          }
+        }
+      }
+    },
+    "Social networks" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réseaux sociaux"
+          }
+        }
+      }
+    },
+    "Source code" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code source"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Démarrer"
+          }
+        }
+      }
+    },
+    "Start dump" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lancer le dump"
+          }
+        }
+      }
+    },
+    "State" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "État"
+          }
+        }
+      }
+    },
+    "Step goal" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Objectif de pas"
+          }
+        }
+      }
+    },
+    "Steps" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas"
+          }
+        }
+      }
+    },
+    "Steps today" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas aujourd'hui"
+          }
+        }
+      }
+    },
+    "Stop" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrêter"
+          }
+        }
+      }
+    },
+    "Stop ringtone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrêter la sonnerie"
+          }
+        }
+      }
+    },
+    "Stop watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrêter la montre"
+          }
+        }
+      }
+    },
+    "Stopwatch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chronomètre"
+          }
+        }
+      }
+    },
+    "Svenska" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svenska"
+          }
+        }
+      }
+    },
+    "Sync" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchroniser"
+          }
+        }
+      }
+    },
+    "Synced %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisé %@"
+          }
+        }
+      }
+    },
+    "System" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système"
+          }
+        }
+      }
+    },
+    "Tap a row to edit. Days: Monday→Sunday bitmask; an alarm with no day never rings." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez une ligne pour modifier. Jours : masque lundi→dimanche ; une alarme sans jour ne sonne jamais."
+          }
+        }
+      }
+    },
+    "Tap to fetch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toucher pour récupérer"
+          }
+        }
+      }
+    },
+    "Targets and side effects of “%@” applied to all watch actions." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cibles et effets de « %@ » appliqués à toutes les actions de la montre."
+          }
+        }
+      }
+    },
+    "Technical log" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Journal technique"
+          }
+        }
+      }
+    },
+    "Telemetry history" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historique de télémétrie"
+          }
+        }
+      }
+    },
+    "Telemetry history URL" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL d'historique de télémétrie"
+          }
+        }
+      }
+    },
+    "Telemetry upload URL" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL d'envoi de télémétrie"
+          }
+        }
+      }
+    },
+    "Temperature" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Température"
+          }
+        }
+      }
+    },
+    "Test connection" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tester la connexion"
+          }
+        }
+      }
+    },
+    "Test notification" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification test"
+          }
+        }
+      }
+    },
+    "Test ringtone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tester la sonnerie"
+          }
+        }
+      }
+    },
+    "Test webhook" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tester le Webhook"
+          }
+        }
+      }
+    },
+    "Text or hexadecimal bytes" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texte ou octets hexadécimaux"
+          }
+        }
+      }
+    },
+    "The Bluetooth name does not prove identity. Select the watch you physically control; for a new device, start its pairing mode." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le nom Bluetooth ne prouve pas l'identité. Sélectionne la montre que tu contrôles physiquement ; pour un nouvel appareil, lance son mode appairage."
+          }
+        }
+      }
+    },
+    "The list is limited to 16 devices. Some may be hidden." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La liste est limitée à 16 périphériques. Certains peuvent être masqués."
+          }
+        }
+      }
+    },
+    "The watch trigger takes a photo with the iPhone (saved to the library). iOS forbids it in background: a notification then asks to open the app. Framing: Settings → Phone → Camera." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le déclencheur de la montre prend une photo avec l'iPhone (enregistrée dans la photothèque). iOS l'interdit en arrière-plan : une notification invite alors à ouvrir l'app. Cadrage : Réglages → Téléphone → Appareil photo."
+          }
+        }
+      }
+    },
+    "The watch trigger takes a photo with the iPhone, saved to the library. iOS only allows capture with the app in front: in background a notification asks to open the app." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le déclencheur de la montre prend une photo avec l'iPhone, enregistrée dans la photothèque. iOS n'autorise la capture qu'avec l'app au premier plan : en arrière-plan, une notification invite à ouvrir l'app."
+          }
+        }
+      }
+    },
+    "The watch vibrates when measured HR leaves this range." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La montre vibre quand le cardio mesuré sort de cette plage."
+          }
+        }
+      }
+    },
+    "The window marks the hours when the watch looks for sleep (every day) — it need not match your exact schedule. Auto-sleep is not confirmed on this firmware: validate by watching upcoming readings." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La fenêtre marque les heures où la montre détecte le sommeil (tous les jours) — elle n'a pas besoin de coller à vos horaires exacts. Le sommeil auto n'est pas confirmé sur ce firmware : validez en observant les prochains relevés."
+          }
+        }
+      }
+    },
+    "Theme" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thème"
+          }
+        }
+      }
+    },
+    "This action does not fire on scroll: it applies only on your confirmation." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette action ne se déclenche pas au défilement : elle ne s'applique qu'après confirmation."
+          }
+        }
+      }
+    },
+    "Tick ring" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bague de graduations"
+          }
+        }
+      }
+    },
+    "Time" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure"
+          }
+        }
+      }
+    },
+    "Time & language" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure et langue"
+          }
+        }
+      }
+    },
+    "Time + step goal" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heure + objectif de pas"
+          }
+        }
+      }
+    },
+    "Time format" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format de l'heure"
+          }
+        }
+      }
+    },
+    "Time sync" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchro de l'heure"
+          }
+        }
+      }
+    },
+    "Time syncs automatically on each connection and on each phone time-zone change." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'heure se synchronise automatiquement à chaque connexion et à chaque changement de fuseau du téléphone."
+          }
+        }
+      }
+    },
+    "Time zone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuseau"
+          }
+        }
+      }
+    },
+    "Timer" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minuteur"
+          }
+        }
+      }
+    },
+    "Title" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titre"
+          }
+        }
+      }
+    },
+    "to" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "à"
+          }
+        }
+      }
+    },
+    "To" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À"
+          }
+        }
+      }
+    },
+    "Token rejected" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeton refusé"
+          }
+        }
+      }
+    },
+    "Token rejected (401)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeton refusé (401)"
+          }
+        }
+      }
+    },
+    "Token rejected (HTTP %lld)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeton refusé (HTTP %lld)"
+          }
+        }
+      }
+    },
+    "Top button" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouton haut"
+          }
+        }
+      }
+    },
+    "Type" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type"
+          }
+        }
+      }
+    },
+    "Units" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unités"
+          }
+        }
+      }
+    },
+    "Unknown action(s): %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action(s) inconnue(s) : %@"
+          }
+        }
+      }
+    },
+    "Unknown mode “%@”" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode « %@ » inconnu"
+          }
+        }
+      }
+    },
+    "Unknown target(s): %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cible(s) inconnue(s) : %@"
+          }
+        }
+      }
+    },
+    "Unknown vibration pattern: “%@”" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motif de vibration inconnu : « %@ »"
+          }
+        }
+      }
+    },
+    "Unreachable: %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Injoignable : %@"
+          }
+        }
+      }
+    },
+    "Unsupported profile version: %lld (expected: 1)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version de profil non prise en charge : %lld (attendu : 1)"
+          }
+        }
+      }
+    },
+    "Up to 10 replies, UTF-16 text (90 chars max). Each edit rewrites the watch flash area: do not interrupt the watch during the operation." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jusqu'à 10 réponses, texte UTF-16 (90 caractères max). Chaque modification réécrit la zone flash de la montre : ne l'interrompez pas pendant l'opération."
+          }
+        }
+      }
+    },
+    "Updated" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mis à jour"
+          }
+        }
+      }
+    },
+    "Updated on each watch connection and hourly while the app runs." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mise à jour à chaque connexion de la montre et toutes les heures tant que l'app tourne."
+          }
+        }
+      }
+    },
+    "URL & token to set" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL et jeton à renseigner"
+          }
+        }
+      }
+    },
+    "Used by the watch to compute calories and distance." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilisé par la montre pour calculer les calories et la distance."
+          }
+        }
+      }
+    },
+    "Value" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valeur"
+          }
+        }
+      }
+    },
+    "Version" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        }
+      }
+    },
+    "Vibration %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibration %@"
+          }
+        }
+      }
+    },
+    "Vibration + beep" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibration + bip"
+          }
+        }
+      }
+    },
+    "Vibration + long beeps" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibration + bips longs"
+          }
+        }
+      }
+    },
+    "Vibration ×1" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibration ×1"
+          }
+        }
+      }
+    },
+    "Vibration ×2" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibration ×2"
+          }
+        }
+      }
+    },
+    "Vibration pattern" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motif de vibration"
+          }
+        }
+      }
+    },
+    "Vibrations" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibrations"
+          }
+        }
+      }
+    },
+    "Volume" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volume"
+          }
+        }
+      }
+    },
+    "Volume %u %%" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volume %u %%"
+          }
+        }
+      }
+    },
+    "Volume +" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volume +"
+          }
+        }
+      }
+    },
+    "Volume −" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volume −"
+          }
+        }
+      }
+    },
+    "Watch" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montre"
+          }
+        }
+      }
+    },
+    "Watch / phone" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montre / téléphone"
+          }
+        }
+      }
+    },
+    "Watch battery" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterie de la montre"
+          }
+        }
+      }
+    },
+    "Watch disconnected: the profile is saved and applied at next connection if reachable." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montre déconnectée : le profil est enregistré et appliqué à la prochaine connexion si elle est joignable."
+          }
+        }
+      }
+    },
+    "Watch firmware" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Firmware de la montre"
+          }
+        }
+      }
+    },
+    "Watch HR (workout)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardio montre (séance)"
+          }
+        }
+      }
+    },
+    "Watch HR interval" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intervalle cardio de la montre"
+          }
+        }
+      }
+    },
+    "Watch info" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informations montre"
+          }
+        }
+      }
+    },
+    "Watch not connected" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montre non connectée"
+          }
+        }
+      }
+    },
+    "Watch not connected: changes will not be sent." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montre non connectée : les modifications ne seront pas envoyées."
+          }
+        }
+      }
+    },
+    "Watch settings" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages montre"
+          }
+        }
+      }
+    },
+    "Water" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eau"
+          }
+        }
+      }
+    },
+    "Weather" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Météo"
+          }
+        }
+      }
+    },
+    "Weather data — Open-Meteo" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Données météo — Open-Meteo"
+          }
+        }
+      }
+    },
+    "Webhook bridge" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pont Webhook"
+          }
+        }
+      }
+    },
+    "Webhook HTTP" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webhook HTTP"
+          }
+        }
+      }
+    },
+    "Webhook HTTP not configured (settings)" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webhook HTTP non configuré (réglages)"
+          }
+        }
+      }
+    },
+    "Webhook not configured" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Webhook non configuré"
+          }
+        }
+      }
+    },
+    "Webhook server" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serveur Webhook"
+          }
+        }
+      }
+    },
+    "Weekdays" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En semaine"
+          }
+        }
+      }
+    },
+    "Weekends" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Week-end"
+          }
+        }
+      }
+    },
+    "Weight: %.1f kg" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poids : %.1f kg"
+          }
+        }
+      }
+    },
+    "When music buttons are routed to Apple Music, the current title shows on the watch. On the watch Music screen: the default player follows the configured webhook and Spotify follows routing (Routing), Deezer drives the Deezer app directly (experimental)." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quand les boutons musique sont routés vers Apple Music, le titre en cours s'affiche sur la montre. Sur l'écran Musique de la montre : le lecteur par défaut suit le webhook configuré et Spotify suit le routage (Routage), Deezer pilote directement l'app Deezer (expérimental)."
+          }
+        }
+      }
+    },
+    "White" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blanc"
+          }
+        }
+      }
+    },
+    "Window: from" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fenêtre : de"
+          }
+        }
+      }
+    },
+    "Wrist" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poignet"
+          }
+        }
+      }
+    },
+    "YY/MM/DD" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AA/MM/JJ"
+          }
+        }
+      }
+    },
+    "ZeTime protocol — artificialred.nl" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protocole ZeTime — artificialred.nl"
+          }
+        }
+      }
+    },
+    "ZeTime watch: %lld%%" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montre ZeTime : %lld%%"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,6 @@
+// Configuration de build de base — publique, sans valeur personnelle.
+// DEVELOPMENT_TEAM et PRODUCT_BUNDLE_IDENTIFIER sont surchargés par
+// ios/Config/Local.xcconfig (non versionné, voir Local.xcconfig.example).
+DEVELOPMENT_TEAM =
+PRODUCT_BUNDLE_IDENTIFIER = com.example.OpenAguja
+#include? "Local.xcconfig"

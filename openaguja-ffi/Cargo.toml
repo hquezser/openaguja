@@ -1,0 +1,31 @@
+[package]
+name = "openaguja-ffi"
+version = "0.1.0"
+edition = "2024"
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/hquezser/openaguja"
+
+[lib]
+name = "openaguja_ffi"
+# No "cdylib": linking a dylib for iOS targets requires the full Xcode SDK
+# (absent on this machine), and uniffi-bindgen --library reads the .a fine.
+crate-type = ["lib", "staticlib"]
+
+[features]
+# Host-only binding generator: keeps uniffi_bindgen and the linked bin out of
+# the iOS builds. Enable for `cargo run -p openaguja-ffi --features bindgen
+# --bin uniffi-bindgen -- generate …`.
+bindgen = ["uniffi/cli"]
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "src/bin/uniffi-bindgen.rs"
+required-features = ["bindgen"]
+
+[dependencies]
+openaguja = { path = "..", default-features = false }
+chrono = "0.4"
+uniffi = "=0.31.1"
+
+[dev-dependencies]
+serde_json = "1"
