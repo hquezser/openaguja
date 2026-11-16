@@ -4,7 +4,7 @@ export const en: LocaleContent = {
   htmlLang: 'en',
   home: {
     terminalLine: '~/projects/openaguja $ cat README.md',
-    intro1: 'Hey. I had a hybrid watch sitting in a drawer and a flaky official app. So I pulled out a BLE sniffer, leaned on the community’s work, and ended up writing a full companion.',
+    intro1: 'Hey. I had a hybrid watch sitting in a drawer and no iOS app to drive it. So I leaned on the community’s work, and ended up writing a full companion.',
     intro2: 'OpenAguja is the result: an iOS app, a CLI, a documented protocol and tools to tinker with the watch’s images. AGPL-3.0, no account, no cloud — your data goes wherever you want.',
     links: [
       { label: '→ github.com/hquezser/openaguja', href: 'https://github.com/hquezser/openaguja' },
@@ -141,7 +141,7 @@ export const en: LocaleContent = {
     { question: 'Which watches are compatible?', answer: 'MyKronoz ZeTime hybrid watches (mechanical hands + touch screen). Development and testing target Apollo 2.0.x / Picture 3.x firmware; other firmwares may work but are not guaranteed — see docs/SAFETY.md before sending any command.' },
     { question: 'Why no App Store?', answer: 'The app uses BLE features and configuration profiles that complicate App Store review, and the project remains experimental. Distribution is via sideloaded IPA (SideStore, AltStore) or an Xcode build with your own signature.' },
     { question: 'Is my health data sent anywhere?', answer: 'Only if you configure a telemetry endpoint: events then go as JSON to the URL of your choice (your server, your Home Assistant…). Without configuration everything stays on the iPhone. No OpenAguja account or service exists.' },
-    { question: 'Can I use the watch without the official app?', answer: 'Yes — that’s the point: pairing, time, notifications, alarms, activity, weather, music all go through OpenAguja. The official app is only needed for the initial firmware setup if your watch was never configured.' },
+    { question: 'Can I use the watch without the official app?', answer: 'Yes — that’s the point: pairing, time, notifications, alarms, activity, weather, music all go through OpenAguja. There is no official app on iOS anyway: the MyKronoz app is Android-only.' },
     { question: 'What are the risks of flashing custom images?', answer: 'A bad flash can brick the watch. openaguja-lab tools verify that only the intended bytes change, but the responsibility is yours: keep a backup dump of every partition before writing anything.' },
     { question: 'How can I contribute?', answer: 'The GitHub repo is open under AGPL-3.0: open an issue or a pull request — code, documentation, anonymized BLE captures and compatibility reports are all welcome.' },
     { question: 'What is the license?', answer: 'AGPL-3.0-or-later for the code, NOTICE for attributions (Gadgetbridge, artificialred.nl). The site and docs are under the same license. See LICENSE in the repo.' },
@@ -187,7 +187,7 @@ export const en: LocaleContent = {
       tags: ['Home automation', 'Webhook'], readingTime: 10,
       summary: 'It all started with a missing remote: the living-room TV. The story of the setup that turned every watch button into an HTTP event toward my own infrastructure — and what remains to explore.',
       content: [
-        { title: 'It all started with a missing remote: the living-room TV', text: 'The Android TV in the living room doubles as the home stereo. To start music, pause or skip a track, you need the phone… or the physical remote. The ZeTime watch is right there on my wrist, but the official app only relays notifications. Gadgetbridge is great but it’s Android. And I definitely didn’t want to hand my routines over to a cloud.' },
+        { title: 'It all started with a missing remote: the living-room TV', text: 'The Android TV in the living room doubles as the home stereo. To start music, pause or skip a track, you need the phone… or the physical remote. The ZeTime watch is right there on my wrist, but no iOS app can drive it — the official app is Android-only, and so is Gadgetbridge. And I definitely didn’t want to hand my routines over to a cloud.' },
         { title: 'Naming the need honestly', text: 'Thinking it through, the need fits in one sentence: a press on the watch must become ONE event my infrastructure understands. The watch itself can’t do that — it speaks BLE to the iPhone, that’s it. But the iPhone is always there, in the pocket. OpenAguja can route every action to a "webhook" target: a JSON POST to a URL I choose.' },
         { title: '', text: '', code: '{\n  "action": "next",\n  "value": 3,\n  "text": "",\n  "timestamp": "2026-11-16T14:32:07+01:00"\n}' },
         { title: 'The insight: the watch doesn’t need to speak HTTP', text: 'That’s the trick: the watch sends its actions over Bluetooth to the app, and the app turns them into JSON POSTs to the configured webhook (Settings → Webhook HTTP). `action` carries the stable id — `play`, `pause`, `next`, `volume_up`… — `value` the crown level, `text` a quick-reply payload. Any 2xx is fine.' },
