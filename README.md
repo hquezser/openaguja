@@ -43,7 +43,10 @@ build from source with your own signing identity.
 No personal URLs or device ids in the source — everything is
 configuration:
 [docs/CUSTOMIZATION.md](docs/CUSTOMIZATION.md) (in-app settings,
-webhook, Shortcuts, macd, own build, CLI).
+webhook, Shortcuts, macd, own build, CLI). For on-watch image-partition
+tooling (menu icons, boot logo, OTA header, memory dumps) see the
+companion repo
+[OpenAguja Lab](https://github.com/hquezser/openaguja-lab).
 
 ## Development
 
