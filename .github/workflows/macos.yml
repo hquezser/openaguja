@@ -1,0 +1,36 @@
+name: macos
+
+# Vérifications macOS : typecheck Swift non-UI + smoke tests, et build
+# iOS non signé. Déclenchement manuel pour l'instant — les runners
+# macOS hébergés par GitHub ne sont pas attribués à ce compte (jobs
+# bloqués en file d'attente). À lancer à la demande :
+#   gh workflow run macos --repo hquezser/openaguja
+# Si un runner auto-hébergé macOS est ajouté plus tard, remplacer
+# runs-on par [self-hosted, macOS] et réactiver les triggers push/PR.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  swift-check:
+    name: Swift non-UI — typecheck + smoke tests
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: scripts/swift-check.sh
+
+  ios-build:
+    name: iOS app — build non signé
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-swift
+      - run: brew install xcodegen
+      - run: rustup target add aarch64-apple-ios aarch64-apple-ios-sim
+      - run: scripts/build-ios.sh

@@ -47,12 +47,14 @@ webhook, Shortcuts, macd, own build, CLI).
 
 ## Development
 
-Checks run in CI (`.github/workflows/ci.yml`): Rust fmt/clippy/tests,
-the Swift typecheck + smoke tests (`scripts/swift-check.sh`), an
-unsigned iOS build, and `scripts/public-check.sh` — a privacy guard
-that fails if personal infrastructure, the professional email, or
-private routine names ever reach a published file or commit history.
-Enable it locally before pushing:
+Checks run in CI (`.github/workflows/ci.yml`): Rust fmt/clippy/tests
+and `scripts/public-check.sh` — a privacy guard that fails if personal
+infrastructure, the professional email, or private routine names ever
+reach a published file or commit history. The macOS checks
+(`scripts/swift-check.sh`, unsigned iOS build) are in
+`.github/workflows/macos.yml`, manual-trigger for now — hosted macOS
+runners aren't assigned to this account yet; run them locally before
+pushing (see AGENTS.md). Enable the privacy guard locally:
 
 ```sh
 scripts/install-hooks.sh   # pre-push → scripts/public-check.sh

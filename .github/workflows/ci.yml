@@ -35,25 +35,6 @@ jobs:
           fetch-depth: 0
       - run: scripts/public-check.sh
 
-  swift-check:
-    name: Swift non-UI — typecheck + smoke tests
-    runs-on: macos-15
-    steps:
-      - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@stable
-      - uses: Swatinem/rust-cache@v2
-      - run: scripts/swift-check.sh
-
-  ios-build:
-    name: iOS app — build non signé
-    runs-on: macos-15
-    steps:
-      - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@stable
-      - uses: Swatinem/rust-cache@v2
-      - uses: taiki-e/install-action@v2
-        with:
-          tool: cargo-swift
-      - run: brew install xcodegen
-      - run: rustup target add aarch64-apple-ios aarch64-apple-ios-sim
-      - run: scripts/build-ios.sh
+  # Les vérifications macOS (swift-check, build iOS) vivent dans
+  # macos.yml — déclenchement manuel : les runners macOS hébergés ne
+  # sont pas attribués à ce compte pour le moment. Voir macos.yml.
