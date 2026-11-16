@@ -11,3 +11,6 @@
 
 # Xcode per-user workspace state
 **/xcuserdata/
+
+# uniffi-bindgen build byproduct (regenerated locally)
+/openaguja-ffi/generated/sources/
