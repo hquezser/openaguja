@@ -37,7 +37,7 @@ jobs:
 
   swift-check:
     name: Swift non-UI — typecheck + smoke tests
-    runs-on: macos-latest
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
@@ -46,7 +46,7 @@ jobs:
 
   ios-build:
     name: iOS app — build non signé
-    runs-on: macos-latest
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
