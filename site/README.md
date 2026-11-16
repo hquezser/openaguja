@@ -1,8 +1,9 @@
 # OpenAguja — site
 
-Site vitrine du projet, en français : accueil, fonctionnalités, guide
-d’installation, notes protocole, blog, FAQ et crédits. Design sombre
-généré avec Lovable, contenu et déploiement gérés dans ce dépôt.
+Site vitrine du projet, en français et en anglais : accueil,
+fonctionnalités, guide d’installation, notes protocole, blog, FAQ et
+crédits. Design sombre généré avec Lovable, contenu et déploiement
+gérés dans ce dépôt.
 
 ## Build
 
@@ -26,10 +27,24 @@ GitHub Pages du dépôt `hquezser/openaguja`, servi sous `/openaguja/` :
 
 ## Contenu
 
-Les textes éditoriaux vivent dans `src/data/` (`project.ts`,
-`articles.ts`, `faq.ts`) ; les gabarits de page dans `src/routes/` et
-`src/components/zetime/documentation.tsx`. Pour ajouter un article :
-une entrée dans `articles.ts`, le prerender le découvre tout seul.
+Site bilingue FR/EN :
+
+- `src/data/content.fr.ts` / `content.en.ts` — tout le contenu
+  éditorial (pages, articles de blog, FAQ) pour chaque locale.
+- `src/data/types.ts` — types partagés (`Article`, sections, pages…).
+- `src/data/i18n.ts` — accès au contenu de la locale courante.
+- Routes FR à la racine (`/`, `/fonctionnalites`, `/installation`,
+  `/protocole`, `/blog`, `/faq`, `/credits`) ; miroir anglais sous
+  `/en/*` (`/en`, `/en/features`, `/en/install`, `/en/protocol`,
+  `/en/blog`, `/en/faq`, `/en/credits`).
+
+**Articles de blog** : ajouter une entrée dans `articles` des DEUX
+fichiers `content.fr.ts` et `content.en.ts`, **au même index** — le
+sélecteur de langue traduit les slugs par position. Le prerender
+découvre les nouvelles pages tout seul.
+
+Sections d’article : `title` + `text` (mini-markdown : `` `code` ``,
+`**gras**`, `[lien](url)`) + `code` optionnel pour un bloc de code.
 
 ## Synchronisation Lovable
 

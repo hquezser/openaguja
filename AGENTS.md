@@ -32,7 +32,10 @@ gitignored).
   `launchd/deploy.plist.template`, `receiver-python/` (example webhook
   receiver).
 - `assets/brand/`: logo + SVG source of truth; `scripts/render-icons.sh`
-  regenerates the app icon and PNG assets.
+  regenerates the app icon and PNG assets; banner-derived
+  `openaguja-{banner,lockup,mark}.png` masters.
+- `site/`: static FR/EN site (TanStack Start prerendered to plain
+  HTML) deployed to GitHub Pages at `/openaguja/` — see `site/README.md`.
 - Telemetry pipeline: `src/telemetry.rs` (`TelemetryEvent` →
   `{"timestamp":u64,"event_type":…,"payload":Value}`) +
   `openaguja-ffi/src/telemetry.rs` (`decodeTelemetryEvents`,
@@ -91,3 +94,37 @@ Prereqs for the iOS build: Xcode, Rust targets `aarch64-apple-ios` +
 `aarch64-apple-ios-sim`, `cargo install cargo-swift`, `brew install
 xcodegen`, and `ios/Config/Local.xcconfig` (see
 `Local.xcconfig.example`) for signing identity.
+
+## CI, site & releases
+
+- `.github/workflows/ci.yml` (auto on push/PR): Rust fmt/clippy/tests
+  on Ubuntu + `scripts/public-check.sh` privacy guard (files, commit
+  authors, forbidden patterns — personal infra, pro email, private
+  routine names). Enable locally via `scripts/install-hooks.sh`.
+- `.github/workflows/macos.yml`: `workflow_dispatch` only — hosted
+  macOS runners are never assigned to this account (jobs queue
+  forever), so `swift-check` + the unsigned iOS build run on demand
+  (`gh workflow run macos`) or locally. A self-hosted runner on a Mac
+  would restore automatic coverage.
+- `.github/workflows/pages.yml`: builds `site/` (`npm ci && vite
+  build`) and deploys `.output/public` via `deploy-pages` — Pages is
+  served from this repo at `https://hquezser.github.io/openaguja/`
+  (`base: "/openaguja/"` in `site/vite.config.ts`).
+
+### Releasing an IPA
+
+Releases ship an **unsigned** IPA — SideStore/AltStore sign it locally
+with the user's own certificate; a pre-signed IPA would need a paid
+developer account + UDIDs.
+
+1. Bump `CFBundleShortVersionString` / `CFBundleVersion` in
+   `ios/OpenAguja/Info.plist`.
+2. `scripts/build-ios.sh` (cargo-swift release + xcodegen + Debug
+   build), then:
+   `xcodebuild -project ios/OpenAguja.xcodeproj -scheme OpenAguja
+   -destination 'generic/platform=iOS' -configuration Release
+   CODE_SIGNING_ALLOWED=NO build`
+3. Package `Payload/OpenAguja.app` → zip → `OpenAguja.ipa`, scan the
+   binary for private patterns, then
+   `gh release create vX.Y.Z OpenAguja.ipa`.
+4. Update the install docs/site status to point at the release.
