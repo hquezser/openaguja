@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/brand/openaguja-logo.png" alt="OpenAguja" width="320">
+  <img src="assets/brand/openaguja-banner.png" alt="OpenAguja" width="100%">
 </p>
 
 # OpenAguja
