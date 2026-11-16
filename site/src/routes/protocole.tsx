@@ -1,7 +1,15 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { DocumentationPage } from '@/components/zetime/documentation';
+import { getContent } from '@/data/i18n';
+
+const meta = getContent('fr').meta.protocol;
+
 export const Route = createFileRoute('/protocole')({
- head: () => ({ meta: [{ title: 'Protocole BLE — OpenAguja' }, { name: 'description', content: 'Une introduction exploratoire aux échanges Bluetooth Low Energy d’une montre hybride.' }, { property: 'og:title', content: 'Protocole BLE — OpenAguja' }, { property: 'og:description', content: 'Une introduction exploratoire aux échanges Bluetooth Low Energy d’une montre hybride.' }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' }] }),
+ head: () => ({ meta: [
+  { title: meta.title }, { name: 'description', content: meta.description },
+  { property: 'og:title', content: meta.title }, { property: 'og:description', content: meta.description },
+  { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' },
+] }),
  component: Page,
 });
-function Page() { return <DocumentationPage page="protocole"/>; }
+function Page() { return <DocumentationPage page="protocol" locale="fr"/>; }

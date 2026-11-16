@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useRouterState,
   HeadContent,
   Scripts,
   type ErrorComponentProps,
@@ -11,6 +12,8 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import { SiteHeader, SiteFooter } from "@/components/zetime/shell";
+import { getContent } from "@/data/i18n";
+import { localeOfPath } from "@/lib/locale";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
@@ -63,7 +66,7 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
             Try again
           </button>
           <a
-            href="/"
+            href={`${import.meta.env.BASE_URL}`}
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
           >
             Go home
@@ -98,7 +101,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: `${import.meta.env.BASE_URL}favicon.ico`, type: "image/x-icon" },
+      { rel: "icon", href: `${import.meta.env.BASE_URL}favicon.png`, type: "image/png" },
+      { property: "og:image", content: "https://hquezser.github.io/openaguja/brand/openaguja-banner.png" },
+      { name: "twitter:image", content: "https://hquezser.github.io/openaguja/brand/openaguja-banner.png" },
     ],
   }),
   shellComponent: RootShell,
@@ -108,8 +113,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const locale = localeOfPath(pathname);
   return (
-    <html lang="fr" className="dark">
+    <html lang={getContent(locale).htmlLang} className="dark">
       <head>
         <HeadContent />
       </head>
@@ -123,13 +130,15 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const locale = localeOfPath(pathname);
 
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <SiteHeader />
+      <SiteHeader locale={locale} />
       <Outlet />
-      <SiteFooter />
+      <SiteFooter locale={locale} />
     </QueryClientProvider>
   );
 }

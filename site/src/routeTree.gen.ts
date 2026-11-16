@@ -17,6 +17,14 @@ import { Route as FonctionnalitesRouteImport } from './routes/fonctionnalites'
 import { Route as InstallationRouteImport } from './routes/installation'
 import { Route as ProtocoleRouteImport } from './routes/protocole'
 import { Route as BlogSlugRouteImport } from './routes/blog_.$slug'
+import { Route as EnIndexRouteImport } from './routes/en/index'
+import { Route as EnBlogRouteImport } from './routes/en/blog'
+import { Route as EnCreditsRouteImport } from './routes/en/credits'
+import { Route as EnFaqRouteImport } from './routes/en/faq'
+import { Route as EnFeaturesRouteImport } from './routes/en/features'
+import { Route as EnInstallRouteImport } from './routes/en/install'
+import { Route as EnProtocolRouteImport } from './routes/en/protocol'
+import { Route as EnBlogSlugRouteImport } from './routes/en/blog_.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -58,6 +66,46 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnIndexRoute = EnIndexRouteImport.update({
+  id: '/en/',
+  path: '/en/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnBlogRoute = EnBlogRouteImport.update({
+  id: '/en/blog',
+  path: '/en/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnCreditsRoute = EnCreditsRouteImport.update({
+  id: '/en/credits',
+  path: '/en/credits',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnFaqRoute = EnFaqRouteImport.update({
+  id: '/en/faq',
+  path: '/en/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnFeaturesRoute = EnFeaturesRouteImport.update({
+  id: '/en/features',
+  path: '/en/features',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnInstallRoute = EnInstallRouteImport.update({
+  id: '/en/install',
+  path: '/en/install',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnProtocolRoute = EnProtocolRouteImport.update({
+  id: '/en/protocol',
+  path: '/en/protocol',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnBlogSlugRoute = EnBlogSlugRouteImport.update({
+  id: '/en/blog_/$slug',
+  path: '/en/blog/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -68,6 +116,14 @@ export interface FileRoutesByFullPath {
   '/installation': typeof InstallationRoute
   '/protocole': typeof ProtocoleRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/en/blog': typeof EnBlogRoute
+  '/en/credits': typeof EnCreditsRoute
+  '/en/faq': typeof EnFaqRoute
+  '/en/features': typeof EnFeaturesRoute
+  '/en/install': typeof EnInstallRoute
+  '/en/protocol': typeof EnProtocolRoute
+  '/en/': typeof EnIndexRoute
+  '/en/blog/$slug': typeof EnBlogSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -78,6 +134,14 @@ export interface FileRoutesByTo {
   '/installation': typeof InstallationRoute
   '/protocole': typeof ProtocoleRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/en/blog': typeof EnBlogRoute
+  '/en/credits': typeof EnCreditsRoute
+  '/en/faq': typeof EnFaqRoute
+  '/en/features': typeof EnFeaturesRoute
+  '/en/install': typeof EnInstallRoute
+  '/en/protocol': typeof EnProtocolRoute
+  '/en': typeof EnIndexRoute
+  '/en/blog/$slug': typeof EnBlogSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -89,6 +153,14 @@ export interface FileRoutesById {
   '/installation': typeof InstallationRoute
   '/protocole': typeof ProtocoleRoute
   '/blog_/$slug': typeof BlogSlugRoute
+  '/en/blog': typeof EnBlogRoute
+  '/en/credits': typeof EnCreditsRoute
+  '/en/faq': typeof EnFaqRoute
+  '/en/features': typeof EnFeaturesRoute
+  '/en/install': typeof EnInstallRoute
+  '/en/protocol': typeof EnProtocolRoute
+  '/en/': typeof EnIndexRoute
+  '/en/blog_/$slug': typeof EnBlogSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +173,14 @@ export interface FileRouteTypes {
     | '/installation'
     | '/protocole'
     | '/blog/$slug'
+    | '/en/blog'
+    | '/en/credits'
+    | '/en/faq'
+    | '/en/features'
+    | '/en/install'
+    | '/en/protocol'
+    | '/en/'
+    | '/en/blog/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,6 +191,14 @@ export interface FileRouteTypes {
     | '/installation'
     | '/protocole'
     | '/blog/$slug'
+    | '/en/blog'
+    | '/en/credits'
+    | '/en/faq'
+    | '/en/features'
+    | '/en/install'
+    | '/en/protocol'
+    | '/en'
+    | '/en/blog/$slug'
   id:
     | '__root__'
     | '/'
@@ -121,6 +209,14 @@ export interface FileRouteTypes {
     | '/installation'
     | '/protocole'
     | '/blog_/$slug'
+    | '/en/blog'
+    | '/en/credits'
+    | '/en/faq'
+    | '/en/features'
+    | '/en/install'
+    | '/en/protocol'
+    | '/en/'
+    | '/en/blog_/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -132,6 +228,14 @@ export interface RootRouteChildren {
   InstallationRoute: typeof InstallationRoute
   ProtocoleRoute: typeof ProtocoleRoute
   BlogSlugRoute: typeof BlogSlugRoute
+  EnBlogRoute: typeof EnBlogRoute
+  EnCreditsRoute: typeof EnCreditsRoute
+  EnFaqRoute: typeof EnFaqRoute
+  EnFeaturesRoute: typeof EnFeaturesRoute
+  EnInstallRoute: typeof EnInstallRoute
+  EnProtocolRoute: typeof EnProtocolRoute
+  EnIndexRoute: typeof EnIndexRoute
+  EnBlogSlugRoute: typeof EnBlogSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -192,6 +296,62 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/en/': {
+      id: '/en/'
+      path: '/en'
+      fullPath: '/en/'
+      preLoaderRoute: typeof EnIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/blog': {
+      id: '/en/blog'
+      path: '/en/blog'
+      fullPath: '/en/blog'
+      preLoaderRoute: typeof EnBlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/credits': {
+      id: '/en/credits'
+      path: '/en/credits'
+      fullPath: '/en/credits'
+      preLoaderRoute: typeof EnCreditsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/faq': {
+      id: '/en/faq'
+      path: '/en/faq'
+      fullPath: '/en/faq'
+      preLoaderRoute: typeof EnFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/features': {
+      id: '/en/features'
+      path: '/en/features'
+      fullPath: '/en/features'
+      preLoaderRoute: typeof EnFeaturesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/install': {
+      id: '/en/install'
+      path: '/en/install'
+      fullPath: '/en/install'
+      preLoaderRoute: typeof EnInstallRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/protocol': {
+      id: '/en/protocol'
+      path: '/en/protocol'
+      fullPath: '/en/protocol'
+      preLoaderRoute: typeof EnProtocolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/blog_/$slug': {
+      id: '/en/blog_/$slug'
+      path: '/en/blog/$slug'
+      fullPath: '/en/blog/$slug'
+      preLoaderRoute: typeof EnBlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -204,6 +364,14 @@ const rootRouteChildren: RootRouteChildren = {
   InstallationRoute: InstallationRoute,
   ProtocoleRoute: ProtocoleRoute,
   BlogSlugRoute: BlogSlugRoute,
+  EnBlogRoute: EnBlogRoute,
+  EnCreditsRoute: EnCreditsRoute,
+  EnFaqRoute: EnFaqRoute,
+  EnFeaturesRoute: EnFeaturesRoute,
+  EnInstallRoute: EnInstallRoute,
+  EnProtocolRoute: EnProtocolRoute,
+  EnIndexRoute: EnIndexRoute,
+  EnBlogSlugRoute: EnBlogSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
