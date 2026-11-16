@@ -21,6 +21,7 @@ export const en: LocaleContent = {
       { label: 'Custom watchfaces and DFU updates', done: true },
       { label: 'Firmware image tools (openaguja-lab)', done: true },
       { label: 'IPA v1.0.0 in Releases', done: true },
+      { label: 'FR/EN site live (GitHub Pages)', done: true },
     ],
     tryTitle: '## Try it',
     tryText: 'The repo is public. For the iOS app there’s no App Store: SideStore, AltStore or an Xcode build — everything is in the install guide.',
@@ -28,6 +29,7 @@ export const en: LocaleContent = {
     code: 'git clone https://github.com/hquezser/openaguja.git\ncd openaguja\n# then follow docs/INSTALL.md',
     logTitle: '## Captain’s log',
     log: [
+      { date: '2026-11-16', text: 'IPA v1.0.0 published in Releases — unsigned, installable via SideStore or AltStore. The site went FR/EN with the new visual identity (banner, favicon).' },
       { date: '2026-11-16', text: 'The site is live. The app passed end-to-end validation on iPhone: connection, routing modes, webhook and macOS daemon.' },
       { date: '2026-11-08', text: 'openaguja-lab published: tools to retouch the watch’s images (menu icons, boot logo) with no firmware included.' },
       { date: '2026-11-02', text: 'Protocol wrapped up: alarms, calendar, quick replies, simple settings and hand calibration documented and implemented.' },

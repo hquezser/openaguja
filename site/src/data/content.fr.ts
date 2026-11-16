@@ -21,6 +21,7 @@ export const fr: LocaleContent = {
       { label: 'Cadrans personnalisés et mise à jour DFU', done: true },
       { label: 'Outils d’images firmware (openaguja-lab)', done: true },
       { label: 'IPA v1.0.0 dans les Releases', done: true },
+      { label: 'Site FR/EN en ligne (GitHub Pages)', done: true },
     ],
     tryTitle: '## Essayer',
     tryText: 'Le dépôt est public. Pour l’app iOS, pas d’App Store : SideStore, AltStore ou build Xcode — tout est dans le guide d’installation.',
@@ -28,6 +29,7 @@ export const fr: LocaleContent = {
     code: 'git clone https://github.com/hquezser/openaguja.git\ncd openaguja\n# puis suivre docs/INSTALL.md',
     logTitle: '## Carnet de bord',
     log: [
+      { date: '2026-11-16', text: 'IPA v1.0.0 publiée dans les Releases — non signée, installable via SideStore ou AltStore. Le site passe en FR/EN avec la nouvelle identité visuelle (banner, favicon).' },
       { date: '2026-11-16', text: 'Le site est en ligne. L’app a été validée de bout en bout sur iPhone : connexion, modes de routage, webhook et daemon macOS.' },
       { date: '2026-11-08', text: 'openaguja-lab publié : outils pour retoucher les images de la montre (icônes du menu, logo de démarrage) sans firmware fourni.' },
       { date: '2026-11-02', text: 'Protocole bouclé : alarmes, calendrier, réponses rapides, réglages simples et calibration des aiguilles documentés et implémentés.' },
