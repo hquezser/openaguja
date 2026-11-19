@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://github.com/hquezser/openaguja/tree/main/docs
+    about: Protocol, safety rules, install and customization guides.
+  - name: Security vulnerability
+    url: https://github.com/hquezser/openaguja/blob/main/SECURITY.md
+    about: Report security issues privately — please do not open a public issue.

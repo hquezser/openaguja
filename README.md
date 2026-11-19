@@ -80,6 +80,13 @@ risks in [docs/SAFETY.md](docs/SAFETY.md).
 - ZeTime is a trademark of MyKronoz/Kronoz, used here only to describe
   compatibility.
 
+## Community
+
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Contributing](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [Accessibility statement](ACCESSIBILITY.md)
+
 ## License
 
 [AGPL-3.0-or-later](LICENSE) — © 2026 Hougo and OpenAguja contributors.
