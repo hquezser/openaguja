@@ -31,7 +31,7 @@ echo "== contenu des fichiers (motifs interdits) =="
 patterns=(
     'trainme'                 # domaine / email professionnel
     'quezada'                 # nom de famille (email pro)
-    'nohost'                  # domaine personnel hougo.nohost.me
+    'nohost'                  # domaine personnel hougo.nohost.me — sauf email de contact publique (public_literals)
     'FBRA9G94UF'              # Team ID Apple personnel
     'MacBook-Pro-de-Hugo'     # hostname personnel
     'casita|-i'               # projet domotique privé
@@ -47,6 +47,17 @@ patterns=(
     'yunohost'                # instance auto-hébergée
 )
 
+# Chaînes explicitement publiques (ex. email de contact projet) :
+# retirées du contenu avant recherche des motifs — le reste du domaine
+# reste banni. Expressions sed BRE, une par élément.
+public_literals=(
+    'dev@hougo\.nohost\.me'
+)
+public_sed=()
+for lit in "${public_literals[@]}"; do
+    public_sed+=(-e "s/${lit}//g")
+done
+
 # Le script lui-même contient les motifs — il est exclu du scan.
 files=$( { git ls-files; git ls-files -o --exclude-standard; } \
     | grep -v -x 'scripts/public-check.sh' | sort -u )
@@ -58,6 +69,18 @@ else
         flags="${entry#*|}"
         [[ "$flags" == "$entry" ]] && flags=""
         hits=$(printf '%s\n' "$files" | xargs grep -l -I -E $flags -e "$pattern" 2>/dev/null || true)
+        # Ignorer les fichiers dont les seules occurrences sont des
+        # chaînes explicitement publiques.
+        if [[ -n "$hits" && ${#public_sed[@]} -gt 0 ]]; then
+            kept=""
+            while IFS= read -r hit; do
+                [[ -z "$hit" ]] && continue
+                if sed "${public_sed[@]}" "$hit" | grep -q -I -E $flags -e "$pattern"; then
+                    kept+="$hit"$'\n'
+                fi
+            done <<< "$hits"
+            hits="${kept%$'\n'}"
+        fi
         if [[ -n "$hits" ]]; then
             fail "motif « $pattern » trouvé dans :"
             printf '%s\n' "$hits" | sed 's/^/    /'
