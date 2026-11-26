@@ -3,9 +3,10 @@
 //! ZeTimeDeviceSupport.java.
 
 use super::{
-    CMD_CALL_CONTROL, CMD_FIND_PHONE, CMD_MUSIC_CONTROL, CMD_REAL_TIME_HEART_RATE, CMD_SEND,
-    CMD_SEND_SOS, CMD_SMS_REPLY, CMD_SMS_REPLY_CONTENT, CMD_SOCIAL_REPLY, CMD_TAKE_PHOTO,
-    ProtocolError, Response, SettingId, decode,
+    CMD_CALL_CONTROL, CMD_FIND_PHONE, CMD_MUSIC_CONTROL, CMD_REAL_TIME_HEART_RATE,
+    CMD_REMOTE_BUTTON, CMD_SEND, CMD_SEND_SOS, CMD_SMS_REPLY, CMD_SMS_REPLY_CONTENT,
+    CMD_SOCIAL_REPLY, CMD_TAKE_PHOTO, ProtocolError, REMOTE_BUTTON_COUNT, Response, SettingId,
+    decode,
 };
 use chrono::{DateTime, NaiveDateTime};
 use std::fmt;
@@ -715,6 +716,11 @@ pub enum WatchEvent {
     /// content follow-up. Decoded per Android `ReplyEvents.kt` + the live
     /// 0xDD capture (`[reply_id:12][notif_title]`).
     QuickReply(QuickReplyEvent),
+    /// 0xE8 — button `n` (1–6) of the "Remote" app added by the community
+    /// `page4` firmware patch. Never sent by stock firmware; no ack
+    /// expected. Numbering per artificialred.nl ("1 upper left,
+    /// clockwise") — not yet confirmed on a real patched watch.
+    RemoteButton(u8),
     /// 0xE2 — real-time heart-rate push `[bpm:1]` (live-observed).
     RealTimeHeartRate {
         bpm: u8,
@@ -803,6 +809,16 @@ fn decode_quick_reply_content(payload: &[u8]) -> QuickReplyEvent {
     }
 }
 
+/// Stable routing id of a patched-firmware "Remote" button
+/// (`remote_1`…`remote_6`), shared by telemetry, the FFI and the iOS
+/// router. `None` outside 1–6.
+pub fn remote_action_id(button: u8) -> Option<&'static str> {
+    const IDS: [&str; REMOTE_BUTTON_COUNT as usize] = [
+        "remote_1", "remote_2", "remote_3", "remote_4", "remote_5", "remote_6",
+    ];
+    IDS.get(usize::from(button).checked_sub(1)?).copied()
+}
+
 /// Decode a watch→phone event frame. Returns `None` for frames that aren't
 /// events. Events 0xD1/0xD2/0xD9/0xDD/0xDE/0xE6 expect a generic ack
 /// (return-code echo) written to the reply characteristic (0x8003) by the
@@ -835,6 +851,10 @@ pub fn parse_watch_event(frame: &[u8]) -> Option<WatchEvent> {
         (CMD_SMS_REPLY_CONTENT, CMD_SEND) if payload.len() >= 2 => {
             Some(WatchEvent::QuickReply(decode_quick_reply_content(&payload)))
         }
+        (CMD_REMOTE_BUTTON, CMD_SEND) => match payload.as_slice() {
+            [n] if (1..=REMOTE_BUTTON_COUNT).contains(n) => Some(WatchEvent::RemoteButton(*n)),
+            _ => None,
+        },
         (CMD_REAL_TIME_HEART_RATE, CMD_SEND) => payload
             .first()
             .map(|&bpm| WatchEvent::RealTimeHeartRate { bpm }),
@@ -1102,6 +1122,25 @@ mod tests {
         assert_eq!(
             parse_watch_event(&[0x6F, 0xDC, 0x71, 0x01, 0x00, 0x01, 0x8F]),
             Some(WatchEvent::CallRejected)
+        );
+        // 0xE8 remote button (patched firmware) — 1..=6 only
+        for n in 1..=6u8 {
+            assert_eq!(
+                parse_watch_event(&[0x6F, 0xE8, 0x71, 0x01, 0x00, n, 0x8F]),
+                Some(WatchEvent::RemoteButton(n))
+            );
+        }
+        assert_eq!(
+            parse_watch_event(&[0x6F, 0xE8, 0x71, 0x01, 0x00, 0x00, 0x8F]),
+            None
+        );
+        assert_eq!(
+            parse_watch_event(&[0x6F, 0xE8, 0x71, 0x01, 0x00, 0x07, 0x8F]),
+            None
+        );
+        assert_eq!(
+            parse_watch_event(&[0x6F, 0xE8, 0x71, 0x02, 0x00, 0x01, 0x02, 0x8F]),
+            None
         );
         // not an event
         assert_eq!(

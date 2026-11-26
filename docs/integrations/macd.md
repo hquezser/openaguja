@@ -42,7 +42,8 @@ Default bind: `0.0.0.0:9876` — reachable from the iPhone on the LAN.
 See `macd/config.example.toml` (comments in French). Each `[commands]`
 key = command name = URL segment; names match the watch action ids
 (`play`, `pause`, `previous`, `next`, `volume_up`, `volume_down`,
-`find_phone`, `camera`, `call_rejected`, `sos`, `quick_reply`) but you
+`find_phone`, `camera`, `call_rejected`, `sos`, `quick_reply`, and
+`remote_1`…`remote_6` for the patched-firmware Remote app) but you
 can map any action id to any command name in the app's routing modes.
 
 Forms accepted per command:

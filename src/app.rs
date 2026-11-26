@@ -1053,6 +1053,8 @@ fn ack_cmd_for(event: &parse::WatchEvent) -> Option<u8> {
         parse::WatchEvent::FindPhone => Some(0xD2),
         parse::WatchEvent::Sos => Some(0xD9),
         parse::WatchEvent::QuickReply(ev) => Some(ev.opcode),
+        // 0xE8 Remote buttons (patched firmware): "no reply needed" per
+        // artificialred.nl — never ack an opcode we haven't seen block.
         _ => None,
     }
 }

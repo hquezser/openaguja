@@ -40,7 +40,7 @@ struct RoutingView: View {
     @EnvironmentObject private var macd: MacDaemonBridge
 
     enum Segment: String, CaseIterable, Identifiable {
-        case physical, media, alerts
+        case physical, media, alerts, remote
         var id: String { rawValue }
     }
 
@@ -66,12 +66,18 @@ struct RoutingView: View {
 
     /// Actions « alertes » : trouver, caméra, appel rejeté, SOS, réponse.
     private static let alertIds: Set<String> = ["find_phone", "camera", "call_rejected", "sos", "quick_reply"]
+    /// Les boutons Remote n'existent qu'avec le firmware patché.
+    private static let remoteFooter: LocalizedStringKey = "Only watches running the community “Remote” firmware patch send these buttons (zetime.artificialred.nl). Stock firmware never does."
     /// Actions « média » : transport et volume.
     private static let mediaIds: Set<String> = ["play", "pause", "previous", "next", "volume_up", "volume_down"]
 
     private var actionsForSegment: [ActionRouter.WatchActionInfo] {
         ActionRouter.actions.filter {
-            segment == .alerts ? Self.alertIds.contains($0.id) : Self.mediaIds.contains($0.id)
+            switch segment {
+            case .alerts: return Self.alertIds.contains($0.id)
+            case .remote: return ActionRouter.isRemoteAction($0.id)
+            default: return Self.mediaIds.contains($0.id)
+            }
         }
     }
 
@@ -112,7 +118,7 @@ struct RoutingView: View {
 
     private var segmentPicker: some View {
         ZTSegmented(options: [
-            (.physical, "Physical"), (.media, "Media"), (.alerts, "Alerts"),
+            (.physical, "Physical"), (.media, "Media"), (.alerts, "Alerts"), (.remote, "Remote"),
         ], selection: $segment)
     }
 
@@ -240,7 +246,10 @@ struct RoutingView: View {
     // MARK: - Actions (media / alerts)
 
     private var actionsCard: some View {
-        ZTSection(title: segment == .media ? "Media" : "Alerts") {
+        ZTSection(
+            title: segment == .media ? "Media" : segment == .remote ? "Remote" : "Alerts",
+            footer: segment == .remote ? Self.remoteFooter : nil
+        ) {
             ZTList {
                 ForEach(Array(actionsForSegment.enumerated()), id: \.element.id) { i, action in
                     if i > 0 { ZTRowDivider() }

@@ -98,6 +98,13 @@ do {
     } else {
         check(false, "decodeFrame camera -> \(frame)")
     }
+    // 0xE8 bouton Remote (firmware patché) → remote_<n>.
+    let remote = try decodeFrame(frame: Data([0x6F, 0xE8, 0x71, 0x01, 0x00, 0x05, 0x8F]))
+    if case .action(let action) = remote, case .remoteButton(let button) = action, button == 5 {
+        check(watchActionId(action: action) == "remote_5", "decodeFrame 0xE8 -> remote_5")
+    } else {
+        check(false, "decodeFrame 0xE8 -> \(remote)")
+    }
     let reply = try decodeFrame(frame: Data([0x6F, 0xDD, 0x71, 0x02, 0x00, 0x0D, 0x03, 0x8F]))
     if case .action(let action) = reply,
        case .quickReply(let opcode, _, let presetCrc, _, _, _, let isContent, let raw) = action,

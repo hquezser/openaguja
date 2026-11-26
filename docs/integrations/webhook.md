@@ -29,8 +29,10 @@ upload/history URLs). "Tester la connexion" sends a `test` action.
 
 Action ids (`ActionRouter.actions`): `play`, `pause`, `previous`,
 `next`, `volume_up`, `volume_down`, `find_phone`, `camera`,
-`call_rejected`, `sos`, `quick_reply` — plus `test` (connection
-check). Each action is routed independently in the app (per-mode
+`call_rejected`, `sos`, `quick_reply`, `remote_1`…`remote_6` (the six
+buttons of the "Remote" app — only on watches running the community
+firmware patch, see `docs/PROTOCOL.md` → `0xE8`) — plus `test`
+(connection check). Each action is routed independently in the app (per-mode
 targets); only actions whose target is "Webhook HTTP" are POSTed.
 
 Headers sent:

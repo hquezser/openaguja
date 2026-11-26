@@ -23,7 +23,8 @@
 //! - `sleep`      ← `0x56` stage/marker records.
 //! - `button`     ← watch-initiated action events on `0x8004` (music `0xD0`,
 //!   camera `0xD1`, find-phone `0xD2`, SOS `0xD9`, call reject `0xDC`,
-//!   quick reply `0xDD`). The wire carries the *function* triggered, not
+//!   quick reply `0xDD`, patched-firmware Remote buttons `0xE8` →
+//!   `remote_1`…`remote_6` + `remote_button`). The wire carries the *function* triggered, not
 //!   the physical button: `button_id` is resolved through the 0x2E
 //!   button→function map when the caller supplies it and the match is
 //!   unique (`button_candidates` lists the ambiguity otherwise).
@@ -291,6 +292,8 @@ fn action_function(action: &WatchEvent) -> (&'static str, Option<u8>) {
         WatchEvent::Sos => ("sos", None),
         WatchEvent::CallRejected => ("call_rejected", None),
         WatchEvent::QuickReply(_) => ("quick_reply", None),
+        // Patched-firmware Remote page: not a 0x2E physical button.
+        WatchEvent::RemoteButton(n) => (parse::remote_action_id(*n).unwrap_or("remote"), None),
         // MusicStateRequest handled separately; RealTimeHeartRate too.
         WatchEvent::MusicStateRequest(_) | WatchEvent::RealTimeHeartRate { .. } => ("", None),
     }
@@ -303,6 +306,7 @@ fn action_extra(action: &WatchEvent) -> Value {
             json!({ "level": level })
         }
         WatchEvent::Music(parse::MusicCommand::Unknown(code)) => json!({ "code": code }),
+        WatchEvent::RemoteButton(n) => json!({ "remote_button": n }),
         WatchEvent::QuickReply(ev) => json!({
             "data_hex": ev.raw.iter().map(|b| format!("{b:02X}")).collect::<String>(),
             "preset_crc": ev.preset_crc,
@@ -503,6 +507,17 @@ mod tests {
         assert!(e.payload["button_id"].is_null());
         assert_eq!(e.payload["button_candidates"], json!([2, 4]));
         assert!(e.payload["press_type"].is_null());
+
+        // Patched-firmware Remote button 0xE8 [4] → remote_4, no 0x2E
+        // function (the Remote page isn't a physical button).
+        let e = only_with(&[0x6F, 0xE8, 0x71, 0x01, 0x00, 0x04, 0x8F], &map);
+        assert_eq!(e.event_type, TelemetryEventType::Button);
+        assert_eq!(e.payload["action"], "remote_4");
+        assert_eq!(e.payload["opcode"], "0xE8");
+        assert_eq!(e.payload["remote_button"], 4);
+        assert!(e.payload["function"].is_null());
+        assert!(e.payload["button_id"].is_null());
+        assert_eq!(e.payload["button_candidates"], json!([]));
 
         // Music next → function 4 → unique button 3.
         let e = only_with(&[0x6F, 0xD0, 0x71, 0x01, 0x00, 0x03, 0x8F], &map);
