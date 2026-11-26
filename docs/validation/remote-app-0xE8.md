@@ -8,7 +8,7 @@ iOS build). Only a real watch can confirm the parts marked
 
 - the exact frame `6F E8 71 01 00 0n 8F`;
 - that the watch really needs **no ack** (no retries, no error screen);
-- the button numbering (position on screen ↔ `n`).
+- that `n` is the number printed on the pressed button.
 
 > **Scope and safety.** This PR never builds, ships or flashes
 > firmware. Installing the patched firmware is a separate, deliberate
@@ -61,15 +61,15 @@ cargo run --features cli --bin openaguja -- -v monitor
 ```
 
 On the watch: *Other apps* → **Remote**, then press each button
-**once**, in clockwise order starting top-left, waiting 3 s between
-presses.
+**once**, in order of the number printed on it (1 → 6), waiting 3 s
+between presses.
 
 | Check | Expected |
 |---|---|
 | Frame per press | exactly one `6F E8 71 01 00 0n 8F` → `RemoteButton(n)` |
 | Retries | no repeated frame for the same press during 10 s (a repeat = the watch is waiting for an ack → **stop, report, do not merge**) |
 | Watch screen | no error / "connection failed" after a press |
-| Numbering | write down which **position** produced which `n` |
+| Numbering | `n` = the number printed on the pressed button (write down any mismatch, with its position) |
 
 Then press one button 5 times quickly: expect 5 frames, no stall.
 
@@ -110,7 +110,7 @@ Patch source/version:
 A1–A6:      ok / ko (notes)
 B1 frame:   ok / ko — raw:
 B1 ack:     no retries / retries seen (details)
-B1 mapping: pos top-left = n?, then clockwise: …
+B1 mapping: n matches printed number? yes / no (details)
 B2.1–B2.7:  ok / ko
 B3:         ok / ko / n/a
 B4:         ok / ko
@@ -124,5 +124,5 @@ B4:         ok / ko
 - If the watch **does** wait for an ack, add `0xE8` to the generic-ack
   paths (`ack_cmd_for` in `src/app.rs`, `handle(action:)` in
   `ZeTimeBluetoothManager.swift`) before merging.
-- If positions don't match the doc, fix the numbering note (ids stay
-  `remote_<n>` as sent by the watch).
+- If `n` doesn't match the printed number, fix the numbering note (ids
+  stay `remote_<n>` as sent by the watch).

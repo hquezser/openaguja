@@ -202,15 +202,24 @@ the app logs raw bytes.
   page with six numbered buttons. A press emits on `0x8004`
   `action=0x71`, payload `[n]`, n = 1–6 — i.e.
   `6F E8 71 01 00 0n 8F` (frame derived from the framing rule, not
-  quoted). The reference says no reply is needed; button numbering is
-  given as "1 upper left, clockwise" but another part of the same page
-  numbers the layout differently — confirm on a real patched watch
-  before binding actions to positions. Stock firmware never sends
-  `0xE8`. OpenAguja decodes it (`WatchEvent::RemoteButton`, telemetry
+  quoted; the patch template is `{6F <id> 71 01 00 <pos> 8F}`, 7 bytes).
+  `n` is **the number printed on the pressed button** ("1 upper left,
+  clockwise"). The reference's other position table (1 = upper right …
+  6 = top) lists the slots of the *Other apps* menu grid where the
+  Remote icon is drawn, not the button numbers. The reference says no
+  reply is needed and describes no retry or timeout. Stock firmware
+  never sends `0xE8`.
+- Remote feedback comes **from the phone**: the patch has no vibration
+  code. The phone runs the action, then buzzes once for success and
+  twice for failure with `0xFA` start/stop (`6F FA 71 01 00 01 8F` /
+  `… 00 …`), timed phone-side — the same mechanism as OpenAguja's
+  existing haptic feedback (live-confirmed by artificialred.nl
+  2026-11-17 with short/double/long patterns).
+- OpenAguja decodes `0xE8` (`WatchEvent::RemoteButton`, telemetry
   `button` with `action:"remote_<n>"` + `remote_button`), never acks
-  it, and routes it as the actions `remote_1`…`remote_6`. Real-world
-  check: [validation/remote-app-0xE8.md](validation/remote-app-0xE8.md). The patch's own app confirms success with one `0xFA`
-  vibration pulse and failure with two (phone-timed start/stop).
+  it, and routes it as the actions `remote_1`…`remote_6`; webhook/daemon
+  results drive the usual haptic feedback. Real-world check:
+  [validation/remote-app-0xE8.md](validation/remote-app-0xE8.md).
 
 - `0xD0` music state query payload = `[source:1]` — the player picked
   on the watch's music screen: 0 = default slot, 1 = Deezer, 2 = Spotify

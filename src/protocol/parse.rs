@@ -718,8 +718,9 @@ pub enum WatchEvent {
     QuickReply(QuickReplyEvent),
     /// 0xE8 — button `n` (1–6) of the "Remote" app added by the community
     /// `page4` firmware patch. Never sent by stock firmware; no ack
-    /// expected. Numbering per artificialred.nl ("1 upper left,
-    /// clockwise") — not yet confirmed on a real patched watch.
+    /// expected. `n` = the number printed on the pressed button (1 upper
+    /// left, clockwise, per artificialred.nl) — not yet confirmed on a
+    /// real patched watch. Success/failure feedback is phone-side (0xFA).
     RemoteButton(u8),
     /// 0xE2 — real-time heart-rate push `[bpm:1]` (live-observed).
     RealTimeHeartRate {
