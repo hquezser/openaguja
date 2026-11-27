@@ -20,6 +20,8 @@ targets:
       path: OpenAguja/Info.plist
       properties:
         CFBundleDisplayName: OpenAguja
+        CFBundleShortVersionString: "1.1.0"
+        CFBundleVersion: "2"
         NSBluetoothAlwaysUsageDescription: "The app connects to your ZeTime watch to relay its actions, including in the background."
         NSLocationWhenInUseUsageDescription: "Your location is used for local weather and to find your car."
         NSLocationAlwaysAndWhenInUseUsageDescription: "To remember and find your car from the watch, with the iPhone in your pocket."
