@@ -81,6 +81,13 @@ struct DayDetailView: View {
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
+                let window = activity.sleepWindow(endingOn: day)
+                if let bed = window.bedtime {
+                    LabeledContent("Bedtime", value: bed.formatted(date: .omitted, time: .shortened))
+                }
+                if let wake = window.wake {
+                    LabeledContent("Wake", value: wake.formatted(date: .omitted, time: .shortened))
+                }
             }
         }
         .navigationTitle("Day by day")
