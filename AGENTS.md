@@ -118,13 +118,18 @@ with the user's own certificate; a pre-signed IPA would need a paid
 developer account + UDIDs.
 
 1. Bump `CFBundleShortVersionString` / `CFBundleVersion` in
-   `ios/OpenAguja/Info.plist`.
+   `ios/project.yml` (`info.properties`) — XcodeGen regenerates
+   `ios/OpenAguja/Info.plist` on every `xcodegen generate`, so a
+   hand-edited plist is reverted.
 2. `scripts/build-ios.sh` (cargo-swift release + xcodegen + Debug
    build), then:
    `xcodebuild -project ios/OpenAguja.xcodeproj -scheme OpenAguja
    -destination 'generic/platform=iOS' -configuration Release
    CODE_SIGNING_ALLOWED=NO build`
+   Build from a checkout at a neutral absolute path: the binary
+   embeds source paths (Swift `#file`, Rust panic locations) — a
+   private-looking directory name would ship inside the IPA.
 3. Package `Payload/OpenAguja.app` → zip → `OpenAguja.ipa`, scan the
-   binary for private patterns, then
+   binary for private patterns (paths included), then
    `gh release create vX.Y.Z OpenAguja.ipa`.
 4. Update the install docs/site status to point at the release.
