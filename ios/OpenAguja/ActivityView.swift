@@ -294,6 +294,7 @@ struct ActivityView: View {
                         sleepLegend("Light", minutes: s.light, color: ZTColor.sleepLight)
                         sleepLegend("Awake", minutes: s.awake, color: ZTColor.sleepREM)
                     }
+                    sleepTimesRow
                 } else {
                     Text("No sleep data for last night.")
                         .font(.footnote).foregroundStyle(ZTColor.muted)
@@ -322,8 +323,31 @@ struct ActivityView: View {
     private func sleepLegend(_ label: LocalizedStringKey, minutes: Int, color: Color) -> some View {
         HStack(spacing: 5) {
             Circle().fill(color).frame(width: 8, height: 8)
-            Text("\(label) \(Self.duration(minutes))")
+            // `Text(label)` plutôt qu'une interpolation : un
+            // LocalizedStringKey interpolé affiche sa description
+            // debug (`LocalizedStringKey(key:…)`), pas la traduction.
+            (Text(label) + Text(" \(Self.duration(minutes))"))
                 .font(.caption.monospacedDigit()).foregroundStyle(ZTColor.muted)
+        }
+    }
+
+    /// Heures de coucher / lever de la nuit (marqueurs begin/end de la
+    /// montre) — ligne masquée tant qu'aucune borne n'est connue.
+    @ViewBuilder
+    private var sleepTimesRow: some View {
+        let window = activity.sleepWindow(endingOn: Date())
+        if window.bedtime != nil || window.wake != nil {
+            HStack(spacing: 14) {
+                if let bed = window.bedtime {
+                    Label("Bedtime \(bed.formatted(date: .omitted, time: .shortened))",
+                          systemImage: "moon.stars.fill")
+                }
+                if let wake = window.wake {
+                    Label("Wake \(wake.formatted(date: .omitted, time: .shortened))",
+                          systemImage: "sunrise.fill")
+                }
+            }
+            .font(.caption).foregroundStyle(ZTColor.muted)
         }
     }
 
