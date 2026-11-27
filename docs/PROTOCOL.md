@@ -99,6 +99,7 @@ Every command below is a real action on real hardware.
 | `0xDC` | Call control (watch→phone) |
 | `0xDD`/`0xDE`/`0xE6` | Quick-reply events (watch→phone) |
 | `0xE2` | Real-time heart-rate push |
+| `0xE8` | Custom "Remote" app button (watch→phone) — **patched firmware only**, see below |
 | `0xEE` | Keyed read (SRAM dumps when keyed right) |
 | `0xEF` | 12-byte DA14580 link-state diagnostic (safe read) |
 | `0xF0`/`0xF1` | Flash erase — **never call, see SAFETY** |
@@ -192,6 +193,34 @@ Watch-initiated events: music `0xD0`, camera remote `0xD1`, find-phone
 are other reply variants). Payloads of `0xD2`/`0xD9` are undocumented —
 the app logs raw bytes.
 
+- `0xD1` camera shutter: `action=0x71`, payload `[0x00]`, sent after
+  the camera screen's 3-2-1 countdown (template at `0x1A8B4` in
+  A2.0.55 per artificialred.nl). Without the generic ack the watch shows
+  "connection failed".
+- `0xE8` (**patched firmware only**, artificialred.nl 2026-11): the
+  community `page4` patch adds a "Remote" entry under *Other apps* — a
+  page with six numbered buttons. A press emits on `0x8004`
+  `action=0x71`, payload `[n]`, n = 1–6 — i.e.
+  `6F E8 71 01 00 0n 8F` (frame derived from the framing rule, not
+  quoted; the patch template is `{6F <id> 71 01 00 <pos> 8F}`, 7 bytes).
+  `n` is **the number printed on the pressed button** ("1 upper left,
+  clockwise"). The reference's other position table (1 = upper right …
+  6 = top) lists the slots of the *Other apps* menu grid where the
+  Remote icon is drawn, not the button numbers. The reference says no
+  reply is needed and describes no retry or timeout. Stock firmware
+  never sends `0xE8`.
+- Remote feedback comes **from the phone**: the patch has no vibration
+  code. The phone runs the action, then buzzes once for success and
+  twice for failure with `0xFA` start/stop (`6F FA 71 01 00 01 8F` /
+  `… 00 …`), timed phone-side — the same mechanism as OpenAguja's
+  existing haptic feedback (live-confirmed by artificialred.nl
+  2026-11-17 with short/double/long patterns).
+- OpenAguja decodes `0xE8` (`WatchEvent::RemoteButton`, telemetry
+  `button` with `action:"remote_<n>"` + `remote_button`), never acks
+  it, and routes it as the actions `remote_1`…`remote_6`; webhook/daemon
+  results drive the usual haptic feedback. Real-world check:
+  [validation/remote-app-0xE8.md](validation/remote-app-0xE8.md).
+
 - `0xD0` music state query payload = `[source:1]` — the player picked
   on the watch's music screen: 0 = default slot, 1 = Deezer, 2 = Spotify
   (user report 2026-10-29; initially guessed swapped). The watch
@@ -265,6 +294,31 @@ the app logs raw bytes.
   assets leaves the watch booting with a broken UI (observed live —
   see project history). Always match firmware component versions;
   keep the watch on the charger for any flash attempt.
+
+### Community findings (artificialred.nl, 2026-11 — not verified here)
+
+- A full official update A1.7.44 → A2.0.55 and the downgrade back both
+  succeeded on a spare watch.
+- Installer constraints reported: image size must be a **multiple of
+  4** (otherwise the installer retries forever); CRC, load address,
+  start address and stack pointer are checked; battery ≥ 50 %; the
+  transfer takes ~3 min, followed by a read-back check.
+- Patched firmware runs: first a one-byte test patch (camera `0xD1`
+  sending `[0x5A]`), then the `page4` Remote app (`0xE8` above). Their
+  client zip (MIT) ships `tools/fwpatch.py` + `patches/page4`; the
+  build only accepts an unmodified `Apollo_2.0.55.bin`. No patched or
+  official firmware is redistributed (MyKronoz code). Tested on two
+  watches only (A2.0.55, hardware W07A); a patch that doesn't boot
+  leaves the watch dark or boot-looping, recoverable **only over SWD**.
+- Bootloader = first 64 KB of flash, never changed by updates; it can
+  be read (not written) with `0xEE` memory peeks (1024 × 64 B,
+  ~30 min). Reference SHA-256, identical on A1.7.44 and A2.0.55
+  watches: `0baded24c8a26fdb7a7846f184742ae9de4c62bc196de7869fb1197af4f35ecc`.
+  A NAND/unmapped `0xEE` address faults the watch.
+- An emulator (`zemu`, Unicorn-based, MIT) runs the real Apollo2
+  firmware (builds 1.6 → 2.0.55) with a fake BLE link — the safest
+  place to try a patched image before any real flash. It needs the
+  official firmware files, which are not included.
 
 ## Crypto / link layer (advanced)
 

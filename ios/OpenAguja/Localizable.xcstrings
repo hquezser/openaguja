@@ -5730,6 +5730,36 @@
           }
         }
       }
+    },
+    "Remote" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Télécommande"
+          }
+        }
+      }
+    },
+    "Remote button %lld" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouton télécommande %lld"
+          }
+        }
+      }
+    },
+    "Only watches running the community “Remote” firmware patch send these buttons (zetime.artificialred.nl). Stock firmware never does." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seules les montres équipées du patch firmware communautaire « Remote » envoient ces boutons (zetime.artificialred.nl). Le firmware d’origine ne le fait jamais."
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

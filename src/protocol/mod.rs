@@ -86,6 +86,13 @@ pub const CMD_CALL_CONTROL: u8 = 0xDC;
 pub const CMD_SMS_REPLY: u8 = 0xDD;
 pub const CMD_SMS_REPLY_CONTENT: u8 = 0xDE;
 pub const CMD_SOCIAL_REPLY: u8 = 0xE6;
+/// 0xE8 — "Remote" app button press, `[n]` with n = 1–6. Only emitted by
+/// watches running the community `page4` firmware patch
+/// (zetime.artificialred.nl, 2026-11) — stock firmware never sends it.
+/// No reply expected per that reference.
+pub const CMD_REMOTE_BUTTON: u8 = 0xE8;
+/// Number of buttons on the patched "Remote" app page.
+pub const REMOTE_BUTTON_COUNT: u8 = 6;
 /// 0xD7 — undocumented watch→phone event opcode. Live-observed repeating
 /// `6F D7 71 01 00 00 8F` (payload `[0x00]`); same firmware handler
 /// family as the WATCH_MOVE_* opcodes (0xB6/0xD6, 0xB8/0xD8) — suspected
@@ -266,6 +273,7 @@ pub fn command_name(cmd: u8) -> &'static str {
         CMD_TAKE_PHOTO => "camera shutter",
         CMD_FIND_PHONE => "find phone",
         CMD_SEND_SOS => "sos",
+        CMD_REMOTE_BUTTON => "remote button",
         CMD_CALL_CONTROL => "call control",
         CMD_SMS_REPLY => "quick reply",
         CMD_INIT => "check init",

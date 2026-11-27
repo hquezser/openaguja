@@ -35,6 +35,14 @@ app or the safe command set (`WatchCommand` / `Command`):
   segments), keep the watch **on the charger**, and never flash
   without understanding the recovery path. See `docs/PROTOCOL.md` →
   DFU.
+- **Patched firmware** (community `page4` Remote app, see
+  `docs/PROTOCOL.md` → DFU): tested on two watches only. A patch that
+  fails to boot can only be recovered by opening the watch and using an
+  SWD probe. Try it in the artificialred.nl emulator first. OpenAguja
+  never builds, ships or flashes patched firmware; it may only *listen*
+  for the `0xE8` events such firmware emits.
+- `0xEE` memory peeks (bootloader dumps): an address in NAND or an
+  unmapped range faults the watch. Stick to documented ranges.
 - Alarms `0x97` edit uses the field block as identity — a malformed
   edit can corrupt the reminder list.
 

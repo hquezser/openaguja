@@ -5,7 +5,8 @@
 #   POST /cmd/<nom>   (Authorization: Bearer <token>)
 # Les noms correspondent aux ids d'actions de la montre envoyés par
 # OpenAguja : play, pause, previous, next, volume_up, volume_down,
-# find_phone, camera, call_rejected, sos, quick_reply.
+# find_phone, camera, call_rejected, sos, quick_reply — et remote_1 à
+# remote_6 (app « Remote » du firmware patché, voir docs/PROTOCOL.md 0xE8).
 #
 # Formes acceptées :
 #   play = "osascript -e 'tell application \"Music\" to play'"

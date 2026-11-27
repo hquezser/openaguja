@@ -264,7 +264,18 @@ final class ActionRouter: ObservableObject {
         .init(id: "call_rejected", label: String(localized: "Call rejected"), symbol: "phone.down.fill", targets: [.webhook, .macDaemon, .shortcut, .ignore]),
         .init(id: "sos", label: "SOS", symbol: "sos", targets: [.webhook, .ringPhone, .macDaemon, .shortcut, .ignore]),
         .init(id: "quick_reply", label: String(localized: "Quick reply"), symbol: "text.bubble.fill", targets: [.webhook, .macDaemon, .shortcut, .ignore]),
-    ]
+    ] + remoteActions
+
+    /// Boutons 1-6 de l'app « Remote » ajoutée par le patch firmware
+    /// communautaire `page4` (0xE8, zetime.artificialred.nl) — une montre
+    /// au firmware d'origine ne les émet jamais. Ids `remote_<n>` alignés
+    /// sur `watchActionId` côté Rust.
+    static let remoteActions: [WatchActionInfo] = (1...6).map { n in
+        .init(id: "remote_\(n)", label: String(localized: "Remote button \(n)"),
+              symbol: "\(n).circle.fill", targets: [.webhook, .macDaemon, .shortcut, .ignore])
+    }
+
+    static func isRemoteAction(_ id: String) -> Bool { id.hasPrefix("remote_") }
 
     @Published private(set) var targets: [String: Target]
     @Published private(set) var shortcuts: [String: String]

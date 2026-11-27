@@ -3757,6 +3757,13 @@ public enum WatchAction: Equatable, Hashable {
      */
     case sos
     /**
+     * 0xE8 — button `button` (1–6) of the "Remote" app added by the
+     * community `page4` firmware patch. Stock firmware never sends it; no
+     * ack expected. Routed as `remote_1`…`remote_6`.
+     */
+    case remoteButton(button: UInt8
+    )
+    /**
      * Quick reply to a notification (0xDD SMS / 0xE6 social selection,
      * 0xDE content follow-up). `text` is the best locally-resolved reply
      * string: 0xDE content, else the emoji face — the app resolves
@@ -3831,7 +3838,10 @@ public struct FfiConverterTypeWatchAction: FfiConverterRustBuffer {
         
         case 9: return .sos
         
-        case 10: return .quickReply(opcode: try FfiConverterUInt8.read(from: &buf), text: try FfiConverterString.read(from: &buf), presetCrc: try FfiConverterOptionUInt16.read(from: &buf), face: try FfiConverterString.read(from: &buf), sender: try FfiConverterOptionString.read(from: &buf), notificationCrc: try FfiConverterOptionUInt16.read(from: &buf), isContent: try FfiConverterBool.read(from: &buf), raw: try FfiConverterData.read(from: &buf)
+        case 10: return .remoteButton(button: try FfiConverterUInt8.read(from: &buf)
+        )
+        
+        case 11: return .quickReply(opcode: try FfiConverterUInt8.read(from: &buf), text: try FfiConverterString.read(from: &buf), presetCrc: try FfiConverterOptionUInt16.read(from: &buf), face: try FfiConverterString.read(from: &buf), sender: try FfiConverterOptionString.read(from: &buf), notificationCrc: try FfiConverterOptionUInt16.read(from: &buf), isContent: try FfiConverterBool.read(from: &buf), raw: try FfiConverterData.read(from: &buf)
         )
         
         default: throw UniffiInternalError.unexpectedEnumCase
@@ -3879,8 +3889,13 @@ public struct FfiConverterTypeWatchAction: FfiConverterRustBuffer {
             writeInt(&buf, Int32(9))
         
         
-        case let .quickReply(opcode,text,presetCrc,face,sender,notificationCrc,isContent,raw):
+        case let .remoteButton(button):
             writeInt(&buf, Int32(10))
+            FfiConverterUInt8.write(button, into: &buf)
+            
+        
+        case let .quickReply(opcode,text,presetCrc,face,sender,notificationCrc,isContent,raw):
+            writeInt(&buf, Int32(11))
             FfiConverterUInt8.write(opcode, into: &buf)
             FfiConverterString.write(text, into: &buf)
             FfiConverterOptionUInt16.write(presetCrc, into: &buf)

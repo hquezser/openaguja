@@ -830,6 +830,10 @@ final class ZeTimeBluetoothManager: NSObject, ObservableObject {
             sendGenericAck(0xD2)
         case .sos:
             sendGenericAck(0xD9)
+        case .remoteButton:
+            // 0xE8 (firmware patché) : « no reply needed » d'après
+            // artificialred.nl — pas d'ack générique.
+            break
         case .quickReply(let opcode, let text, let presetCrc, let face, let sender, let notificationCrc, _, let raw):
             // La montre bloque jusqu'à l'ack écho de SON opcode
             // (0xDD SMS / 0xDE contenu / 0xE6 social).

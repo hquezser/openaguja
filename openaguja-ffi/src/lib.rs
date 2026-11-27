@@ -130,6 +130,12 @@ pub enum WatchAction {
     FindPhone,
     /// 0xD9 — SOS trigger.
     Sos,
+    /// 0xE8 — button `button` (1–6) of the "Remote" app added by the
+    /// community `page4` firmware patch. Stock firmware never sends it; no
+    /// ack expected. Routed as `remote_1`…`remote_6`.
+    RemoteButton {
+        button: u8,
+    },
     /// Quick reply to a notification (0xDD SMS / 0xE6 social selection,
     /// 0xDE content follow-up). `text` is the best locally-resolved reply
     /// string: 0xDE content, else the emoji face — the app resolves
@@ -272,6 +278,9 @@ pub fn decode_frame(frame: Vec<u8>) -> Result<WatchFrame, ZeTimeError> {
             WatchEvent::Sos => WatchFrame::Action {
                 action: WatchAction::Sos,
             },
+            WatchEvent::RemoteButton(button) => WatchFrame::Action {
+                action: WatchAction::RemoteButton { button },
+            },
             WatchEvent::QuickReply(ev) => WatchFrame::Action {
                 action: WatchAction::QuickReply {
                     opcode: ev.opcode,
@@ -312,6 +321,9 @@ pub fn watch_action_id(action: WatchAction) -> String {
         WatchAction::FindPhone => "find_phone",
         WatchAction::Sos => "sos",
         WatchAction::QuickReply { .. } => "quick_reply",
+        WatchAction::RemoteButton { button } => {
+            openaguja::protocol::parse::remote_action_id(button).unwrap_or("remote")
+        }
     }
     .to_string()
 }
@@ -590,6 +602,13 @@ mod tests {
                 action: WatchAction::Camera
             }
         ));
+        // Patched-firmware Remote button 3
+        assert!(matches!(
+            decode_frame(vec![0x6F, 0xE8, 0x71, 0x01, 0x00, 0x03, 0x8F]).unwrap(),
+            WatchFrame::Action {
+                action: WatchAction::RemoteButton { button: 3 }
+            }
+        ));
         // Find-phone (payload byte undocumented)
         assert!(matches!(
             decode_frame(vec![0x6F, 0xD2, 0x71, 0x01, 0x00, 0x01, 0x8F]).unwrap(),
@@ -701,6 +720,14 @@ mod tests {
         assert_eq!(watch_action_id(WatchAction::CallRejected), "call_rejected");
         assert_eq!(watch_action_id(WatchAction::Camera), "camera");
         assert_eq!(watch_action_id(WatchAction::FindPhone), "find_phone");
+        assert_eq!(
+            watch_action_id(WatchAction::RemoteButton { button: 1 }),
+            "remote_1"
+        );
+        assert_eq!(
+            watch_action_id(WatchAction::RemoteButton { button: 6 }),
+            "remote_6"
+        );
         assert_eq!(watch_action_id(WatchAction::Sos), "sos");
         assert_eq!(
             watch_action_id(WatchAction::QuickReply {
