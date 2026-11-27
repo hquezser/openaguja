@@ -857,12 +857,32 @@
         }
       }
     },
+    "Bedtime" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coucher"
+          }
+        }
+      }
+    },
     "Bedtime / wake" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coucher / réveil"
+          }
+        }
+      }
+    },
+    "Bedtime %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coucher à %@"
           }
         }
       }
@@ -5397,6 +5417,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volume −"
+          }
+        }
+      }
+    },
+    "Wake" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lever"
+          }
+        }
+      }
+    },
+    "Wake %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lever à %@"
           }
         }
       }

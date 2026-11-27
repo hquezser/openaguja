@@ -245,6 +245,22 @@ final class ActivityStore: ObservableObject {
         return (deep, light, awake)
     }
 
+    /// Bornes de la nuit se terminant le jour donné (même fenêtre que
+    /// `sleepSummary`) : coucher = marqueur `begin` (kind 10) à défaut
+    /// premier segment de sommeil, lever = marqueur `end` (kind 11) à
+    /// défaut dernier segment. Chaque borne reste `nil` sans donnée.
+    func sleepWindow(endingOn day: Date) -> (bedtime: Date?, wake: Date?) {
+        let calendar = Calendar.current
+        let start = calendar.date(byAdding: .hour, value: -6, to: calendar.startOfDay(for: day))!
+        let end = calendar.date(byAdding: .hour, value: 12, to: calendar.startOfDay(for: day))!
+        let samples = sleep.filter { $0.date >= start && $0.date < end }
+        let segments = samples.filter { (0...4).contains($0.kind) }.map(\.date)
+        return (
+            samples.filter { $0.kind == 10 }.map(\.date).min() ?? segments.min(),
+            samples.filter { $0.kind == 11 }.map(\.date).max() ?? segments.max()
+        )
+    }
+
     /// Export CSV (pas puis cardio) pour la feuille de partage.
     func exportCSV() -> URL? {
         let f = ISO8601DateFormatter()
